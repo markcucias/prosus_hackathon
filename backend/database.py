@@ -3,16 +3,47 @@ from pymongo import MongoClient
 from datetime import datetime, timedelta
 import re
 
+# Singleton MongoDB client to reuse connections
+_mongo_client = None
+_mongo_db = None
+
 def get_database():
-    """Connect to MongoDB Atlas."""
+    """Connect to MongoDB Atlas with connection pooling."""
+    global _mongo_client, _mongo_db
+    
+    if _mongo_db is not None:
+        # Reuse existing connection
+        try:
+            # Test connection
+            _mongo_client.admin.command('ping')
+            return _mongo_db
+        except:
+            # Connection lost, reset
+            _mongo_client = None
+            _mongo_db = None
+    
+    # Create new connection
     CONNECTION_STRING = "mongodb+srv://prosus-db-user:yLFIMGwT48qUKxDG@prosus-db-user.wfei3mu.mongodb.net/?retryWrites=true&w=majority"
-    client = MongoClient(
-        CONNECTION_STRING,
-        serverSelectionTimeoutMS=5000,  # 5 second timeout
-        connectTimeoutMS=5000,
-        socketTimeoutMS=5000
-    )
-    return client["study_companion"]
+    
+    try:
+        _mongo_client = MongoClient(
+            CONNECTION_STRING,
+            serverSelectionTimeoutMS=10000,  # 10 second timeout (increased)
+            connectTimeoutMS=10000,
+            socketTimeoutMS=30000,  # 30 second socket timeout
+            maxPoolSize=50,  # Connection pool size
+            minPoolSize=5,   # Minimum connections
+            retryWrites=True,
+            retryReads=True
+        )
+        _mongo_db = _mongo_client["study_companion"]
+        
+        # Test connection
+        _mongo_client.admin.command('ping')
+        return _mongo_db
+    except Exception as e:
+        print(f"⚠️ MongoDB connection error: {str(e)[:100]}")
+        raise
 
 def insert_event(data):
     """Insert one event document into MongoDB."""

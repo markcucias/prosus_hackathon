@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Sensitive files
+token.json
+backend/token.json
+*.token.json

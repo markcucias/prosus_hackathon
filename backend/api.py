@@ -11,10 +11,16 @@ from assignment_sync import (
     send_proactive_reminders
 )
 from calendar_reader import list_and_store_events
+from agentic_service import agent, start_agent, stop_agent, get_agent_status
+from email_service import send_test_email
 import traceback
+import atexit
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for React frontend
+
+# Stop agent gracefully when Flask shuts down
+atexit.register(stop_agent)
 
 @app.route('/health', methods=['GET'])
 def health_check():
@@ -239,9 +245,94 @@ def get_upcoming():
             'error': str(e)
         }), 500
 
+@app.route('/api/agent/status', methods=['GET'])
+def agent_status():
+    """Get the status of the agentic AI agent."""
+    try:
+        status = get_agent_status()
+        return jsonify({
+            'success': True,
+            'agent': status
+        })
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+@app.route('/api/agent/start', methods=['POST'])
+def start_agent_endpoint():
+    """Manually start the agent (if stopped)."""
+    try:
+        start_agent()
+        return jsonify({
+            'success': True,
+            'message': 'Agent started successfully'
+        })
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+@app.route('/api/agent/stop', methods=['POST'])
+def stop_agent_endpoint():
+    """Manually stop the agent."""
+    try:
+        stop_agent()
+        return jsonify({
+            'success': True,
+            'message': 'Agent stopped successfully'
+        })
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+@app.route('/api/email/test', methods=['POST'])
+def test_email():
+    """Test email configuration by sending a test email."""
+    try:
+        data = request.json
+        user_email = data.get('user_email')
+        
+        if not user_email:
+            return jsonify({
+                'success': False,
+                'error': 'user_email is required'
+            }), 400
+        
+        success, message = send_test_email(user_email)
+        
+        if success:
+            return jsonify({
+                'success': True,
+                'message': 'Test email sent successfully'
+            })
+        else:
+            return jsonify({
+                'success': False,
+                'error': message
+            }), 500
+            
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
 if __name__ == '__main__':
     print("🚀 Starting Study Companion Calendar API...")
     print("📍 http://localhost:5001")
     print("-" * 60)
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    
+    # Start the agentic AI agent
+    print("\n🤖 Initializing Agentic Study Companion...")
+    start_agent()
+    print("\n")
+    
+    # Disable reloader to prevent scheduler conflicts
+    # Set use_reloader=False when running with APScheduler
+    app.run(host='0.0.0.0', port=5001, debug=True, use_reloader=False)
 
