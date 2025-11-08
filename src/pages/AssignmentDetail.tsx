@@ -34,8 +34,20 @@ export default function AssignmentDetail() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (id) loadAssignment();
+    checkAuthAndLoad();
   }, [id]);
+
+  const checkAuthAndLoad = async () => {
+    // Check if user is authenticated first
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) {
+      toast.error("Please log in to view this assignment");
+      navigate("/auth");
+      return;
+    }
+
+    if (id) await loadAssignment();
+  };
 
   const loadAssignment = async () => {
     try {
@@ -44,12 +56,29 @@ export default function AssignmentDetail() {
         supabase.from("study_sessions").select("*").eq("assignment_id", id).order("scheduled_at"),
       ]);
 
-      if (assignmentRes.error) throw assignmentRes.error;
-      if (sessionsRes.error) throw sessionsRes.error;
+      if (assignmentRes.error) {
+        console.error("Assignment load error:", assignmentRes.error);
+        if (assignmentRes.error.code === 'PGRST116') {
+          toast.error("Assignment not found");
+        } else if (assignmentRes.error.message.includes('policy')) {
+          toast.error("Access denied - please check your permissions");
+        } else {
+          toast.error(`Failed to load assignment: ${assignmentRes.error.message}`);
+        }
+        navigate("/");
+        return;
+      }
+
+      if (sessionsRes.error) {
+        console.error("Sessions load error:", sessionsRes.error);
+        // Sessions might not exist yet, so just log warning but don't fail
+        console.warn("Could not load study sessions:", sessionsRes.error.message);
+      }
 
       setAssignment(assignmentRes.data);
-      setSessions(sessionsRes.data);
+      setSessions(sessionsRes.data || []);
     } catch (error: any) {
+      console.error("Unexpected error loading assignment:", error);
       toast.error("Failed to load assignment");
       navigate("/");
     } finally {
