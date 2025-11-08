@@ -364,6 +364,7 @@ Return ONLY this JSON:
         question: String,
         type: String,             // "numerical" | "short_answer" | "multiple_choice"
         correctAnswer: String,    // Or Number for numerical
+        options: [String],        // Optional; required if type is "multiple_choice"
         explanation: String,
         points: Number            // Weight of this problem
       }],
@@ -385,6 +386,7 @@ DIFFICULTY: ${difficulty}/5
 INSTRUCTIONS:
 - Create 3-5 related problems that build on each other or test the same concept
 - Mix problem types: numerical calculations, short conceptual questions, or quick MCQs
+- For multiple_choice type, include an options array with 4 choices (A, B, C, D)
 - Each problem should be solvable in 1-2 minutes
 - Assign points based on difficulty (1-3 points per problem)
 - Total should be 10 points
@@ -411,7 +413,7 @@ Return this EXACT JSON structure:
       "question": "problem 3",
       "type": "multiple_choice",
       "correctAnswer": "B",
-      "options": ["A", "B", "C", "D"],
+      "options": ["Option A text", "Option B text", "Option C text", "Option D text"],
       "explanation": "why B",
       "points": 2
     }
