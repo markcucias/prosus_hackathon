@@ -337,15 +337,15 @@ def test_email():
     try:
         data = request.json
         user_email = data.get('user_email')
-        
+
         if not user_email:
             return jsonify({
                 'success': False,
                 'error': 'user_email is required'
             }), 400
-        
+
         success, message = send_test_email(user_email)
-        
+
         if success:
             return jsonify({
                 'success': True,
@@ -356,7 +356,52 @@ def test_email():
                 'success': False,
                 'error': message
             }), 500
-            
+
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+@app.route('/api/mongodb/reset', methods=['POST'])
+def reset_mongodb():
+    """
+    Reset MongoDB processed flags so assignments can be synced again.
+    Useful for testing after clearing Supabase database.
+    """
+    try:
+        from database import get_database
+
+        db = get_database()
+        collection = db["calendar_events"]
+
+        # Count before reset
+        total_assignments = collection.count_documents({'is_assignment': True})
+        processed_before = collection.count_documents({'is_assignment': True, 'processed': True})
+
+        # Reset processed and reminder_sent flags
+        result = collection.update_many(
+            {'is_assignment': True},
+            {'$set': {
+                'processed': False,
+                'reminder_sent': False
+            }}
+        )
+
+        # Count after reset
+        processed_after = collection.count_documents({'is_assignment': True, 'processed': True})
+
+        return jsonify({
+            'success': True,
+            'message': f'Reset {result.modified_count} assignment(s)',
+            'stats': {
+                'total_assignments': total_assignments,
+                'processed_before': processed_before,
+                'processed_after': processed_after,
+                'unprocessed_now': total_assignments - processed_after
+            }
+        })
+
     except Exception as e:
         return jsonify({
             'success': False,
