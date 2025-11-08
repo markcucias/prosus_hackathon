@@ -210,6 +210,10 @@ def send_new_assignment_notification(user_email, assignment_details):
     msg['From'] = f"Study Companion AI <{sender_email}>"
     msg['To'] = user_email
 
+    # Get assignment ID for direct link
+    assignment_id = assignment_details.get('id', '')
+    assignment_url = f"http://localhost:8080/assignments/{assignment_id}" if assignment_id else "http://localhost:8080/assignments"
+
     # Email body (plain text)
     text_body = f"""
 Hi there! 👋
@@ -224,15 +228,15 @@ Great news! I've detected a new assignment from your calendar:
 
 To create a personalized study plan with practice questions, I need you to:
 
-1. Log in to your Study Companion dashboard
-2. Navigate to the assignment: "{assignment_details['title']}"
-3. Upload your materials:
+1. Click the link below to go directly to this assignment
+2. Upload your study materials:
    🔹 Lecture slides
    🔹 Course syllabus/instructions
    🔹 Practice problems or past exams
    🔹 Any other relevant study materials
+3. Click "Create Study Plan" to generate your personalized schedule
 
-👉 Log in here: http://localhost:8080
+👉 Upload materials here: {assignment_url}
 
 Once you upload the materials, I'll automatically:
 ✅ Generate a personalized study schedule
@@ -311,7 +315,7 @@ This is an automated notification. Your assignment was detected from your Google
             </div>
 
             <div style="text-align: center;">
-                <a href="http://localhost:8080" class="action-button">📖 Log In & Upload Materials</a>
+                <a href="{assignment_url}" class="action-button">📖 Upload Materials for This Assignment</a>
             </div>
 
             <div style="background: #e8f5e9; padding: 15px; border-radius: 5px; margin: 20px 0;">
