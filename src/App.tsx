@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import NewAssignment from "./pages/NewAssignment";
 import AssignmentDetail from "./pages/AssignmentDetail";
 import SessionPage from "./pages/SessionPage";
+import CalendarSync from "./pages/CalendarSync";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/assignments/new" element={<NewAssignment />} />
           <Route path="/assignments/:id" element={<AssignmentDetail />} />
           <Route path="/sessions/:id" element={<SessionPage />} />
+          <Route path="/calendar-sync" element={<CalendarSync />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
