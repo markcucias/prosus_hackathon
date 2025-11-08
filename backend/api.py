@@ -8,7 +8,8 @@ from database import (
 )
 from assignment_sync import (
     check_and_sync_for_user,
-    send_proactive_reminders
+    send_proactive_reminders,
+    create_sessions_for_assignment
 )
 from calendar_reader import list_and_store_events
 from agentic_service import agent, start_agent, stop_agent, get_agent_status
@@ -244,6 +245,46 @@ def get_upcoming():
             'success': False,
             'error': str(e)
         }), 500
+
+@app.route('/api/assignments/<assignment_id>/create-sessions', methods=['POST'])
+def create_sessions_for_assignment_endpoint(assignment_id):
+    """
+    Create study sessions for an assignment after materials are uploaded.
+    Body: { "user_id": "uuid-here" }
+    """
+    try:
+        data = request.json
+        user_id = data.get('user_id')
+
+        if not user_id:
+            return jsonify({
+                'success': False,
+                'error': 'user_id is required'
+            }), 400
+
+        print(f"\n📚 Creating study sessions for assignment {assignment_id}...")
+        sessions_created = create_sessions_for_assignment(assignment_id, user_id)
+
+        if sessions_created > 0:
+            return jsonify({
+                'success': True,
+                'message': f'Created {sessions_created} study sessions',
+                'sessions_created': sessions_created
+            })
+        else:
+            return jsonify({
+                'success': False,
+                'error': 'Failed to create study sessions'
+            }), 500
+
+    except Exception as e:
+        print(f"Error in create_sessions_for_assignment_endpoint: {e}")
+        traceback.print_exc()
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
 
 @app.route('/api/agent/status', methods=['GET'])
 def agent_status():

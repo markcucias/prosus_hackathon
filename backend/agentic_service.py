@@ -10,9 +10,9 @@ This module implements the agentic AI behavior:
 from apscheduler.schedulers.background import BackgroundScheduler
 from datetime import datetime, timedelta, timezone
 from database import get_upcoming_assignments, mark_reminder_sent, extract_assignment_info, get_unprocessed_assignments
-from email_service import send_exam_reminder
+from email_service import send_exam_reminder, send_new_assignment_notification
 from calendar_reader import list_and_store_events
-from assignment_sync import get_supabase_client, sync_calendar_to_assignments
+from assignment_sync import get_supabase_client, sync_calendar_to_assignments, mark_assignment_notification_sent
 import requests
 import os
 from dotenv import load_dotenv
@@ -91,8 +91,31 @@ class AgenticStudyCompanion:
                 unprocessed = get_unprocessed_assignments()
                 if unprocessed:
                     print(f"🔄 [AGENT] Syncing {len(unprocessed)} new assignments to Supabase...")
-                    synced = sync_calendar_to_assignments(user_id)
-                    print(f"✅ [AGENT] Synced {synced} assignments to 'Your assignments' tab")
+                    created_assignments = sync_calendar_to_assignments(user_id)
+                    print(f"✅ [AGENT] Created {len(created_assignments)} assignments in 'Your assignments' tab")
+
+                    # Send email notification for each new assignment
+                    for assignment in created_assignments:
+                        try:
+                            assignment_details = {
+                                'title': assignment['title'],
+                                'date': assignment['due_at'],
+                                'type': assignment['type'],
+                                'course': assignment['title']  # Can be improved with better parsing
+                            }
+
+                            # Send notification email
+                            email_sent = send_new_assignment_notification(USER_EMAIL, assignment_details)
+
+                            if email_sent:
+                                # Mark notification as sent in Supabase
+                                mark_assignment_notification_sent(assignment['id'])
+                                print(f"📧 [AGENT] Notification sent for: {assignment['title']}")
+                            else:
+                                print(f"⚠️ [AGENT] Failed to send notification for: {assignment['title']}")
+                        except Exception as e:
+                            print(f"❌ [AGENT] Error sending notification: {str(e)}")
+                            continue
             else:
                 unprocessed = get_unprocessed_assignments()
                 if unprocessed:

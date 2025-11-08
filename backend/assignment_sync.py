@@ -29,18 +29,19 @@ def get_supabase_client():
         }
     }
 
-def create_assignment_in_supabase(user_id, assignment_data):
+def create_assignment_in_supabase(user_id, assignment_data, create_sessions=False):
     """
     Create an assignment in Supabase from calendar event data.
     Args:
         user_id: UUID of the user
         assignment_data: dict with assignment details
+        create_sessions: Whether to create study sessions immediately (default: False)
     Returns:
         Created assignment object or None if failed
     """
     try:
         client = get_supabase_client()
-        
+
         # Prepare assignment data
         assignment = {
             'user_id': user_id,
@@ -49,25 +50,35 @@ def create_assignment_in_supabase(user_id, assignment_data):
             'exam_subtype': assignment_data.get('exam_subtype', 'hybrid'),
             'due_at': assignment_data['due_date'],
             'topics': extract_topics_from_title(assignment_data['title']),
-            'status': 'upcoming'
+            'status': 'upcoming',
+            'materials_uploaded': False,
+            'notification_sent': False
         }
-        
+
         # Insert into Supabase using REST API
         url = f"{client['url']}/rest/v1/assignments"
         response = requests.post(url, json=assignment, headers=client['headers'])
-        
+
         if response.status_code in [200, 201]:
             result = response.json()
             if result and len(result) > 0:
+                created_assignment = result[0]
                 print(f"✅ Created assignment in Supabase: {assignment_data['title']}")
-                return result[0]
+
+                # Only create study sessions if explicitly requested (e.g., after materials uploaded)
+                if create_sessions:
+                    assignment_id = created_assignment.get('id')
+                    if assignment_id:
+                        create_study_sessions_for_assignment(client, user_id, assignment_id, assignment_data)
+
+                return created_assignment
             else:
                 print(f"⚠️ Assignment created but no data returned")
                 return {'id': 'unknown', **assignment}
         else:
             print(f"❌ Failed to create assignment: {response.status_code} - {response.text}")
             return None
-            
+
     except Exception as e:
         print(f"❌ Error creating assignment in Supabase: {e}")
         import traceback
@@ -148,42 +159,135 @@ def create_study_sessions_for_assignment(client, user_id, assignment_id, assignm
         print(f"⚠️ Error creating study sessions: {e}")
         return 0
 
-def sync_calendar_to_assignments(user_id):
+def sync_calendar_to_assignments(user_id, send_notification_callback=None):
     """
     Sync unprocessed calendar assignments to Supabase.
-    This should be called periodically or when user logs in.
+    This creates the assignment but does NOT create study sessions.
+    Study sessions are created later after user uploads materials.
+
     Args:
         user_id: UUID of the user to create assignments for
+        send_notification_callback: Optional callback function to send email notification
+                                   Should accept (user_email, assignment_info) as arguments
     Returns:
-        Number of assignments synced
+        List of created assignments
     """
     unprocessed = get_unprocessed_assignments()
-    synced_count = 0
-    client = get_supabase_client()
-    
+    created_assignments = []
+
     print(f"\n🔄 Syncing {len(unprocessed)} unprocessed assignments...")
-    
+
     for calendar_event in unprocessed:
         assignment_info = extract_assignment_info(
             calendar_event['details'],
             calendar_event['datetime']
         )
-        
-        # Create in Supabase
-        created = create_assignment_in_supabase(user_id, assignment_info)
-        
+
+        # Create assignment in Supabase WITHOUT study sessions
+        created = create_assignment_in_supabase(user_id, assignment_info, create_sessions=False)
+
         if created:
-            assignment_id = created.get('id')
-            if assignment_id:
-                # Create study sessions for this assignment
-                create_study_sessions_for_assignment(client, user_id, assignment_id, assignment_info)
-            
+            created_assignments.append(created)
+
             # Mark as processed in MongoDB
             mark_assignment_processed(calendar_event['_id'])
-            synced_count += 1
-    
-    print(f"✅ Synced {synced_count} assignments to Supabase")
-    return synced_count
+
+            # Return the created assignment info for notification
+            print(f"✅ Assignment created: {assignment_info['title']}")
+            print(f"   ⚠️ Study sessions NOT created yet - waiting for user to upload materials")
+
+    print(f"\n✅ Synced {len(created_assignments)} assignments to Supabase")
+    print(f"   📧 Email notifications will be sent to prompt material upload")
+    return created_assignments
+
+def mark_assignment_notification_sent(assignment_id):
+    """
+    Mark that email notification was sent for this assignment.
+    Args:
+        assignment_id: UUID of the assignment
+    """
+    try:
+        client = get_supabase_client()
+        url = f"{client['url']}/rest/v1/assignments"
+        url += f"?id=eq.{assignment_id}"
+
+        update_data = {
+            'notification_sent': True,
+            'notification_sent_at': datetime.now().isoformat()
+        }
+
+        response = requests.patch(url, json=update_data, headers=client['headers'])
+
+        if response.status_code in [200, 204]:
+            print(f"✅ Marked notification sent for assignment {assignment_id}")
+            return True
+        else:
+            print(f"⚠️ Failed to mark notification: {response.status_code}")
+            return False
+
+    except Exception as e:
+        print(f"❌ Error marking notification sent: {e}")
+        return False
+
+
+def create_sessions_for_assignment(assignment_id, user_id):
+    """
+    Create study sessions for an existing assignment (e.g., after materials uploaded).
+    Args:
+        assignment_id: UUID of the assignment
+        user_id: UUID of the user
+    Returns:
+        Number of sessions created
+    """
+    try:
+        client = get_supabase_client()
+
+        # Get assignment details
+        url = f"{client['url']}/rest/v1/assignments"
+        url += f"?id=eq.{assignment_id}&select=*"
+        response = requests.get(url, headers=client['headers'])
+
+        if response.status_code != 200:
+            print(f"❌ Failed to get assignment: {response.status_code}")
+            return 0
+
+        assignments = response.json()
+        if not assignments or len(assignments) == 0:
+            print(f"❌ Assignment not found: {assignment_id}")
+            return 0
+
+        assignment = assignments[0]
+
+        # Prepare assignment data for session creation
+        assignment_data = {
+            'due_date': assignment['due_at'],
+            'type': assignment['type'],
+            'topics': assignment.get('topics', [])
+        }
+
+        # Create study sessions
+        sessions_created = create_study_sessions_for_assignment(
+            client, user_id, assignment_id, assignment_data
+        )
+
+        # Mark materials as uploaded
+        update_url = f"{client['url']}/rest/v1/assignments"
+        update_url += f"?id=eq.{assignment_id}"
+        update_data = {
+            'materials_uploaded': True,
+            'materials_uploaded_at': datetime.now().isoformat()
+        }
+        requests.patch(update_url, json=update_data, headers=client['headers'])
+
+        print(f"✅ Created {sessions_created} study sessions for assignment")
+        return sessions_created
+
+    except Exception as e:
+        print(f"❌ Error creating sessions for assignment: {e}")
+        import traceback
+        traceback.print_exc()
+        return 0
+
 
 def send_proactive_reminders(user_id, days_ahead=7):
     """
