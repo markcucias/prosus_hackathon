@@ -142,29 +142,19 @@ Return this EXACT JSON structure:
       
       // Check justification quality via keywords
       const justificationLower = (userJustification || "").toLowerCase();
-      const keywordsFound = exercise.requiredKeywords.filter(keyword => 
-        justificationLower.includes(keyword.toLowerCase())
+      const keywordsFound = exercise.requiredKeywords.filter(k =>
+        justificationLower.includes(k.toLowerCase())
       );
       
-      const justificationScore = keywordsFound.length / exercise.requiredKeywords.length;
-      
-      let feedback;
-      let finalScore;
-      
-      if (justificationScore >= 0.5) {
-        // Good justification
-        finalScore = 100;
-        feedback = `Correct! Your justification covers the key points. ${exercise.explanation}`;
-      } else {
-        // Weak justification
-        finalScore = 50;
-        feedback = `Your answer is correct, but your justification could be stronger. Make sure to mention: ${exercise.requiredKeywords.join(', ')}. ${exercise.explanation}`;
-      }
+      const ratio = keywordsFound.length / exercise.requiredKeywords.length;
+      const adequate = ratio >= 0.5;
       
       return {
-        isCorrect: true,
-        score: finalScore,
-        feedback: feedback,
+        isCorrect: adequate,               // <-- reflect justification quality
+        score: adequate ? 100 : 60,        // partial credit if boolean right but weak rationale
+        feedback: adequate
+          ? `Correct! Your justification covers the key points. ${exercise.explanation}`
+          : `Right idea, but justification is thin. Mention: ${exercise.requiredKeywords.join(', ')}. ${exercise.explanation}`,
         correctAnswer: exercise.correctAnswer,
         keywordsCovered: keywordsFound,
         keywordsMissed: exercise.requiredKeywords.filter(k => !keywordsFound.includes(k))
