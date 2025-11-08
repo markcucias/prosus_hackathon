@@ -27,3 +27,12 @@ dist-ssr
 token.json
 backend/token.json
 *.token.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/__pycache__/
+backend/*.pyc
