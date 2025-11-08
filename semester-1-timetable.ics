@@ -1,0 +1,3456 @@
+BEGIN:VCALENDAR
+PRODID:-//Eveoh//Eveoh iCalExporter 1.3//EN
+VERSION:2.0
+METHOD:PUBLISH
+CALSCALE:GREGORIAN
+X-WR-TIMEZONE:Europe/Brussels
+X-WR-CALNAME:Leiden University - Personal timetable: Kacper Nizielski
+X-WR-CALDESC:Leiden University - Personal timetable: Kacper Nizielski
+BEGIN:VTIMEZONE
+TZID:Europe/Brussels
+LAST-MODIFIED:20230911T053111Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Europe/Brussels
+X-LIC-LOCATION:Europe/Brussels
+BEGIN:DAYLIGHT
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250901T111500Z
+DTEND:20250901T130000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Gorlaeus Building - BE.0.18
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209673-1@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nGorlaeus Building - BE.0.18\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209673\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250901T111500Z
+DTEND:20250901T130000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Gorlaeus Building - BM.1.26
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!225054-1@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nGorlaeus Building - BM.1.26\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 225054\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250901T131500Z
+DTEND:20250901T150000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-1@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250902T111500Z
+DTEND:20250902T130000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - BM.1.33
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!239888-1@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - BM.1.33\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 239888\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250903T111500Z
+DTEND:20250903T130000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-1@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250904T070000Z
+DTEND:20250904T084500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BE.0.08
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!241944-1@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - BE.0.08\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 241944\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250905T070000Z
+DTEND:20250905T084500Z
+SUMMARY:4032COVIXY - Computer Vision - Werkgroep 102
+LOCATION:Gorlaeus Building - DM.0.13-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207565-1@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ W\n\nLocation(s):\nGorlaeus Building - DM.0.13-PC\n\nStaff member(s): Ca
+ o\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12410 (102)\
+ n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=co
+ urses&q=4032COVIX&redirect=1\n\nID: 207565\n\nThis appointment is manage
+ d by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250908T111500Z
+DTEND:20250908T130000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!224791-2@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Müller-Brockhau
+ sen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\nProspectu
+ s: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032
+ IVGM6&redirect=1\n\nID: 224791\n\nThis appointment is managed by MyTimet
+ able.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250908T131500Z
+DTEND:20250908T150000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-2@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250909T111500Z
+DTEND:20250909T130000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!223573-2@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 223573\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250910T090000Z
+DTEND:20250910T104500Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216122-2@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6X
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Meer\
+ , M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group)
+ : 19444 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216122\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250910T111500Z
+DTEND:20250910T130000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-2@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250911T070000Z
+DTEND:20250911T084500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.31
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!241943-2@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.31\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 241943\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250911T111500Z
+DTEND:20250911T130000Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Hoorcollege 101
+LOCATION:Van Steenis - F1.04
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216417-2@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ H\n\nLocation(s):\nVan Steenis - F1.04\n\nStaff member(s): Verbeek\, F.J
+ .(Fons)\n\nClass number (Group): 14996 (101)\n\nProspectus: https://stud
+ iegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&redirect=
+ 1\n\nID: 216417\n\nThis appointment is managed by MyTimetable.\n\nLast s
+ ynchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250912T070000Z
+DTEND:20250912T084500Z
+SUMMARY:4032COVIXY - Computer Vision - Werkgroep 102
+LOCATION:Gorlaeus Building - DM.0.13-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207565-2@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ W\n\nLocation(s):\nGorlaeus Building - DM.0.13-PC\n\nStaff member(s): Ca
+ o\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12410 (102)\
+ n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=co
+ urses&q=4032COVIX&redirect=1\n\nID: 207565\n\nThis appointment is manage
+ d by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250912T131500Z
+DTEND:20250912T150000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Practisch werk 102
+LOCATION:Gorlaeus Building - DM.0.21-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216258-2@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Practicum\n\nProspec
+ tus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6XA\
+ n\nLocation(s):\nGorlaeus Building - DM.0.21-PC\n\nStaff member(s): Meer
+ \, M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group
+ ): 19474 (102)\n\nProspectus: https://studiegids.universiteitleiden.nl/e
+ n/search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216258\n\nThis appoin
+ tment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 1
+ 2:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250915T090000Z
+DTEND:20250915T104500Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Hoorcollege 101
+LOCATION:Gorlaeus Building - BM.1.23
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209658-3@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ H\n\nLocation(s):\nGorlaeus Building - BM.1.23\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 14996 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 209658\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250915T111500Z
+DTEND:20250915T130000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!224791-3@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Müller-Brockhau
+ sen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\nProspectu
+ s: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032
+ IVGM6&redirect=1\n\nID: 224791\n\nThis appointment is managed by MyTimet
+ able.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250915T131500Z
+DTEND:20250915T150000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-3@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250916T070000Z
+DTEND:20250916T084500Z
+SUMMARY:4032GENAIY - Generative AI - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262423-3@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Saunders\, R.(R
+ ob)\n\nClass number (Group): 14992 (101)\n\nProspectus: https://studiegi
+ ds.universiteitleiden.nl/en/search?for=courses&q=4032GENAI&redirect=1\n\
+ nID: 262423\n\nThis appointment is managed by MyTimetable.\n\nLast synch
+ ronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250916T111500Z
+DTEND:20250916T130000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!223573-3@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 223573\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250917T090000Z
+DTEND:20250917T104500Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216122-3@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6X
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Meer\
+ , M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group)
+ : 19444 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216122\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250917T111500Z
+DTEND:20250917T130000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-3@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250918T070000Z
+DTEND:20250918T084500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.31
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!241943-3@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.31\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 241943\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250918T111500Z
+DTEND:20250918T130000Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Hoorcollege 101
+LOCATION:Van Steenis - F1.04
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216417-3@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ H\n\nLocation(s):\nVan Steenis - F1.04\n\nStaff member(s): Verbeek\, F.J
+ .(Fons)\n\nClass number (Group): 14996 (101)\n\nProspectus: https://stud
+ iegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&redirect=
+ 1\n\nID: 216417\n\nThis appointment is managed by MyTimetable.\n\nLast s
+ ynchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250919T070000Z
+DTEND:20250919T084500Z
+SUMMARY:4032COVIXY - Computer Vision - Werkgroep 102
+LOCATION:Gorlaeus Building - DM.0.13-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207565-3@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ W\n\nLocation(s):\nGorlaeus Building - DM.0.13-PC\n\nStaff member(s): Ca
+ o\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12410 (102)\
+ n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=co
+ urses&q=4032COVIX&redirect=1\n\nID: 207565\n\nThis appointment is manage
+ d by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250919T131500Z
+DTEND:20250919T150000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Practisch werk 102
+LOCATION:Gorlaeus Building - DM.0.21-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216258-3@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Practicum\n\nProspec
+ tus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6XA\
+ n\nLocation(s):\nGorlaeus Building - DM.0.21-PC\n\nStaff member(s): Meer
+ \, M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group
+ ): 19474 (102)\n\nProspectus: https://studiegids.universiteitleiden.nl/e
+ n/search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216258\n\nThis appoin
+ tment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 1
+ 2:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250922T090000Z
+DTEND:20250922T104500Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Hoorcollege 101
+LOCATION:Gorlaeus Building - BM.1.23
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209658-4@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ H\n\nLocation(s):\nGorlaeus Building - BM.1.23\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 14996 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 209658\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250922T111500Z
+DTEND:20250922T130000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!224791-4@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Müller-Brockhau
+ sen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\nProspectu
+ s: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032
+ IVGM6&redirect=1\n\nID: 224791\n\nThis appointment is managed by MyTimet
+ able.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250922T131500Z
+DTEND:20250922T150000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-4@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250923T070000Z
+DTEND:20250923T084500Z
+SUMMARY:4032GENAIY - Generative AI - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262423-4@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Saunders\, R.(R
+ ob)\n\nClass number (Group): 14992 (101)\n\nProspectus: https://studiegi
+ ds.universiteitleiden.nl/en/search?for=courses&q=4032GENAI&redirect=1\n\
+ nID: 262423\n\nThis appointment is managed by MyTimetable.\n\nLast synch
+ ronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250923T111500Z
+DTEND:20250923T130000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!223573-4@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 223573\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250924T090000Z
+DTEND:20250924T104500Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216122-4@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6X
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Meer\
+ , M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group)
+ : 19444 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216122\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250924T111500Z
+DTEND:20250924T130000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-4@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250924T131500Z
+DTEND:20250924T150000Z
+SUMMARY:4032GENAIY - Generative AI - Werkgroep 101
+LOCATION:Van Steenis - F0.06\, Van Steenis - E0.03B
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209653-4@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ W\n\nLocation(s):\nVan Steenis - E0.03B\nVan Steenis - F0.06\n\nStaff me
+ mber(s): Saunders\, R.(Rob)\n\nClass number (Group): 14993 (101)\n\nPros
+ pectus: https://studiegids.universiteitleiden.nl/en/search?for=courses&q
+ =4032GENAI&redirect=1\n\nID: 209653\n\nThis appointment is managed by My
+ Timetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250925T070000Z
+DTEND:20250925T084500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - DM.1.09
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!241945-4@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - DM.1.09\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 241945\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250925T111500Z
+DTEND:20250925T130000Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Hoorcollege 101
+LOCATION:Van Steenis - F1.04
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216417-4@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ H\n\nLocation(s):\nVan Steenis - F1.04\n\nStaff member(s): Verbeek\, F.J
+ .(Fons)\n\nClass number (Group): 14996 (101)\n\nProspectus: https://stud
+ iegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&redirect=
+ 1\n\nID: 216417\n\nThis appointment is managed by MyTimetable.\n\nLast s
+ ynchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250926T070000Z
+DTEND:20250926T084500Z
+SUMMARY:4032COVIXY - Computer Vision - Werkgroep 102
+LOCATION:Gorlaeus Building - DM.0.13-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207565-4@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ W\n\nLocation(s):\nGorlaeus Building - DM.0.13-PC\n\nStaff member(s): Ca
+ o\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12410 (102)\
+ n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=co
+ urses&q=4032COVIX&redirect=1\n\nID: 207565\n\nThis appointment is manage
+ d by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250926T131500Z
+DTEND:20250926T150000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Practisch werk 102
+LOCATION:Gorlaeus Building - DM.0.21-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216258-4@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Practicum\n\nProspec
+ tus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6XA\
+ n\nLocation(s):\nGorlaeus Building - DM.0.21-PC\n\nStaff member(s): Meer
+ \, M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group
+ ): 19474 (102)\n\nProspectus: https://studiegids.universiteitleiden.nl/e
+ n/search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216258\n\nThis appoin
+ tment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 1
+ 2:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250929T090000Z
+DTEND:20250929T104500Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Hoorcollege 101
+LOCATION:Gorlaeus Building - BM.1.23
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209658-5@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ H\n\nLocation(s):\nGorlaeus Building - BM.1.23\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 14996 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 209658\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250929T111500Z
+DTEND:20250929T130000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!224791-5@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Müller-Brockhau
+ sen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\nProspectu
+ s: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032
+ IVGM6&redirect=1\n\nID: 224791\n\nThis appointment is managed by MyTimet
+ able.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250929T131500Z
+DTEND:20250929T150000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-5@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20250930T111500Z
+DTEND:20250930T130000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!223573-5@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 223573\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251001T090000Z
+DTEND:20251001T104500Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216122-5@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6X
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Meer\
+ , M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group)
+ : 19444 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216122\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251001T111500Z
+DTEND:20251001T130000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-5@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251001T131500Z
+DTEND:20251001T150000Z
+SUMMARY:4032GENAIY - Generative AI - Werkgroep 101
+LOCATION:Gorlaeus Building - CM.1.26
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262467-5@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ W\n\nLocation(s):\nGorlaeus Building - CM.1.26\n\nStaff member(s): Saund
+ ers\, R.(Rob)\n\nClass number (Group): 14993 (101)\n\nProspectus: https:
+ //studiegids.universiteitleiden.nl/en/search?for=courses&q=4032GENAI&red
+ irect=1\n\nID: 262467\n\nThis appointment is managed by MyTimetable.\n\n
+ Last synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251002T070000Z
+DTEND:20251002T084500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.31
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!241943-5@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.31\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 241943\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251002T111500Z
+DTEND:20251002T130000Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Hoorcollege 101
+LOCATION:Van Steenis - F1.04
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216417-5@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ H\n\nLocation(s):\nVan Steenis - F1.04\n\nStaff member(s): Verbeek\, F.J
+ .(Fons)\n\nClass number (Group): 14996 (101)\n\nProspectus: https://stud
+ iegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&redirect=
+ 1\n\nID: 216417\n\nThis appointment is managed by MyTimetable.\n\nLast s
+ ynchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251006T090000Z
+DTEND:20251006T104500Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Hoorcollege 101
+LOCATION:Gorlaeus Building - BM.1.23
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209658-6@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ H\n\nLocation(s):\nGorlaeus Building - BM.1.23\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 14996 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 209658\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251006T111500Z
+DTEND:20251006T130000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!224791-6@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Müller-Brockhau
+ sen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\nProspectu
+ s: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032
+ IVGM6&redirect=1\n\nID: 224791\n\nThis appointment is managed by MyTimet
+ able.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251006T131500Z
+DTEND:20251006T150000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-6@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251007T111500Z
+DTEND:20251007T130000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!223573-6@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 223573\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251008T090000Z
+DTEND:20251008T104500Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216122-6@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6X
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Meer\
+ , M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group)
+ : 19444 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216122\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251008T111500Z
+DTEND:20251008T130000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-6@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251008T131500Z
+DTEND:20251008T150000Z
+SUMMARY:4032GENAIY - Generative AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.31\, Gorlaeus Building - BW.0.05
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262468-6@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.05\nGorlaeus Building - BW.0
+ .31\n\nStaff member(s): Saunders\, R.(Rob)\n\nClass number (Group): 1499
+ 3 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en/searc
+ h?for=courses&q=4032GENAI&redirect=1\n\nID: 262468\n\nThis appointment i
+ s managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CE
+ T
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251009T070000Z
+DTEND:20251009T084500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.31
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!241943-6@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.31\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 241943\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251009T111500Z
+DTEND:20251009T130000Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Hoorcollege 101
+LOCATION:Van Steenis - F1.04
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216417-6@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ H\n\nLocation(s):\nVan Steenis - F1.04\n\nStaff member(s): Verbeek\, F.J
+ .(Fons)\n\nClass number (Group): 14996 (101)\n\nProspectus: https://stud
+ iegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&redirect=
+ 1\n\nID: 216417\n\nThis appointment is managed by MyTimetable.\n\nLast s
+ ynchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251010T070000Z
+DTEND:20251010T084500Z
+SUMMARY:4032COVIXY - Computer Vision - Werkgroep 102
+LOCATION:Gorlaeus Building - DM.0.13-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207565-6@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ W\n\nLocation(s):\nGorlaeus Building - DM.0.13-PC\n\nStaff member(s): Ca
+ o\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12410 (102)\
+ n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=co
+ urses&q=4032COVIX&redirect=1\n\nID: 207565\n\nThis appointment is manage
+ d by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251010T131500Z
+DTEND:20251010T150000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Practisch werk 102
+LOCATION:Gorlaeus Building - DM.0.21-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216258-6@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Practicum\n\nProspec
+ tus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6XA\
+ n\nLocation(s):\nGorlaeus Building - DM.0.21-PC\n\nStaff member(s): Meer
+ \, M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group
+ ): 19474 (102)\n\nProspectus: https://studiegids.universiteitleiden.nl/e
+ n/search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216258\n\nThis appoin
+ tment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 1
+ 2:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251013T090000Z
+DTEND:20251013T104500Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Hoorcollege 101
+LOCATION:Gorlaeus Building - BM.1.23
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209658-7@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ H\n\nLocation(s):\nGorlaeus Building - BM.1.23\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 14996 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 209658\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251013T111500Z
+DTEND:20251013T130000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!224791-7@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Müller-Brockhau
+ sen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\nProspectu
+ s: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032
+ IVGM6&redirect=1\n\nID: 224791\n\nThis appointment is managed by MyTimet
+ able.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251013T131500Z
+DTEND:20251013T150000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-7@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251014T070000Z
+DTEND:20251014T084500Z
+SUMMARY:4032GENAIY - Generative AI - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262423-7@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Saunders\, R.(R
+ ob)\n\nClass number (Group): 14992 (101)\n\nProspectus: https://studiegi
+ ds.universiteitleiden.nl/en/search?for=courses&q=4032GENAI&redirect=1\n\
+ nID: 262423\n\nThis appointment is managed by MyTimetable.\n\nLast synch
+ ronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251014T111500Z
+DTEND:20251014T130000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - BM.1.33
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207563-7@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - BM.1.33\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 207563\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251015T090000Z
+DTEND:20251015T104500Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216122-7@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6X
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Meer\
+ , M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group)
+ : 19444 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216122\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251015T111500Z
+DTEND:20251015T130000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-7@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251015T131500Z
+DTEND:20251015T150000Z
+SUMMARY:4032GENAIY - Generative AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.31\, Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262469-7@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.29\nGorlaeus Building - BW.0
+ .31\n\nStaff member(s): Saunders\, R.(Rob)\n\nClass number (Group): 1499
+ 3 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en/searc
+ h?for=courses&q=4032GENAI&redirect=1\n\nID: 262469\n\nThis appointment i
+ s managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CE
+ T
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251016T070000Z
+DTEND:20251016T084500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - DM.1.09
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!241945-7@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - DM.1.09\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 241945\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251016T111500Z
+DTEND:20251016T130000Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Hoorcollege 101
+LOCATION:Van Steenis - F1.04
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216417-7@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ H\n\nLocation(s):\nVan Steenis - F1.04\n\nStaff member(s): Verbeek\, F.J
+ .(Fons)\n\nClass number (Group): 14996 (101)\n\nProspectus: https://stud
+ iegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&redirect=
+ 1\n\nID: 216417\n\nThis appointment is managed by MyTimetable.\n\nLast s
+ ynchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251017T070000Z
+DTEND:20251017T084500Z
+SUMMARY:4032COVIXY - Computer Vision - Werkgroep 102
+LOCATION:Gorlaeus Building - DM.0.21-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!263390-7@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ W\n\nLocation(s):\nGorlaeus Building - DM.0.21-PC\n\nStaff member(s): Ca
+ o\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12410 (102)\
+ n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=co
+ urses&q=4032COVIX&redirect=1\n\nID: 263390\n\nThis appointment is manage
+ d by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251017T131500Z
+DTEND:20251017T150000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Practisch werk 102
+LOCATION:Gorlaeus Building - DM.0.21-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216258-7@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Practicum\n\nProspec
+ tus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6XA\
+ n\nLocation(s):\nGorlaeus Building - DM.0.21-PC\n\nStaff member(s): Meer
+ \, M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group
+ ): 19474 (102)\n\nProspectus: https://studiegids.universiteitleiden.nl/e
+ n/search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216258\n\nThis appoin
+ tment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 1
+ 2:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251027T100000Z
+DTEND:20251027T114500Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Hoorcollege 101
+LOCATION:Gorlaeus Building - BM.1.23
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209658-9@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ H\n\nLocation(s):\nGorlaeus Building - BM.1.23\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 14996 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 209658\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251027T121500Z
+DTEND:20251027T140000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!224791-9@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Müller-Brockhau
+ sen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\nProspectu
+ s: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032
+ IVGM6&redirect=1\n\nID: 224791\n\nThis appointment is managed by MyTimet
+ able.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251027T141500Z
+DTEND:20251027T160000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-9@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251028T080000Z
+DTEND:20251028T094500Z
+SUMMARY:4032GENAIY - Generative AI - Hoorcollege 101
+LOCATION:Lecture Hall - C1
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262424-9@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ H\n\nLocation(s):\nLecture Hall - C1\n\nStaff member(s): Saunders\, R.(R
+ ob)\n\nClass number (Group): 14992 (101)\n\nProspectus: https://studiegi
+ ds.universiteitleiden.nl/en/search?for=courses&q=4032GENAI&redirect=1\n\
+ nID: 262424\n\nThis appointment is managed by MyTimetable.\n\nLast synch
+ ronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251028T121500Z
+DTEND:20251028T140000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - CM.1.26
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!248832-9@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - CM.1.26\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 248832\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251029T100000Z
+DTEND:20251029T114500Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216122-9@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6X
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Meer\
+ , M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group)
+ : 19444 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216122\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251029T121500Z
+DTEND:20251029T140000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-9@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251029T141500Z
+DTEND:20251029T160000Z
+SUMMARY:4032GENAIY - Generative AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.19\, Gorlaeus Building - BW.0.20
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262465-9@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.19\nGorlaeus Building - BW.0
+ .20\n\nStaff member(s): Saunders\, R.(Rob)\n\nClass number (Group): 1499
+ 3 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en/searc
+ h?for=courses&q=4032GENAI&redirect=1\n\nID: 262465\n\nThis appointment i
+ s managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CE
+ T
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251030T080000Z
+DTEND:20251030T094500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BE.0.08
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!241944-9@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - BE.0.08\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 241944\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251030T121500Z
+DTEND:20251030T140000Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Werkgroep 101
+LOCATION:Van Steenis - F1.04
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209659-9@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ W\n\nLocation(s):\nVan Steenis - F1.04\n\nStaff member(s): Verbeek\, F.J
+ .(Fons)\n\nClass number (Group): 15003 (101)\n\nProspectus: https://stud
+ iegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&redirect=
+ 1\n\nID: 209659\n\nThis appointment is managed by MyTimetable.\n\nLast s
+ ynchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251031T080000Z
+DTEND:20251031T094500Z
+SUMMARY:4032COVIXY - Computer Vision - Werkgroep 102
+LOCATION:Gorlaeus Building - DM.0.13-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207565-9@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ W\n\nLocation(s):\nGorlaeus Building - DM.0.13-PC\n\nStaff member(s): Ca
+ o\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12410 (102)\
+ n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=co
+ urses&q=4032COVIX&redirect=1\n\nID: 207565\n\nThis appointment is manage
+ d by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251031T141500Z
+DTEND:20251031T160000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Practisch werk 102
+LOCATION:Gorlaeus Building - DM.0.21-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216258-9@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Practicum\n\nProspec
+ tus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6XA\
+ n\nLocation(s):\nGorlaeus Building - DM.0.21-PC\n\nStaff member(s): Meer
+ \, M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group
+ ): 19474 (102)\n\nProspectus: https://studiegids.universiteitleiden.nl/e
+ n/search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216258\n\nThis appoin
+ tment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 1
+ 2:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251103T101500Z
+DTEND:20251103T120000Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Werkgroep 101
+LOCATION:Van Steenis - E0.04
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216420-10@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ W\n\nLocation(s):\nVan Steenis - E0.04\n\nStaff member(s): Verbeek\, F.J
+ .(Fons)\n\nClass number (Group): 15003 (101)\n\nProspectus: https://stud
+ iegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&redirect=
+ 1\n\nID: 216420\n\nThis appointment is managed by MyTimetable.\n\nLast s
+ ynchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251103T121500Z
+DTEND:20251103T140000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!224791-10@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Müller-Brockhau
+ sen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\nProspectu
+ s: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032
+ IVGM6&redirect=1\n\nID: 224791\n\nThis appointment is managed by MyTimet
+ able.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251103T141500Z
+DTEND:20251103T160000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-10@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251104T080000Z
+DTEND:20251104T094500Z
+SUMMARY:4032GENAIY - Generative AI - Hoorcollege 101
+LOCATION:Lecture Hall - C1
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262424-10@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ H\n\nLocation(s):\nLecture Hall - C1\n\nStaff member(s): Saunders\, R.(R
+ ob)\n\nClass number (Group): 14992 (101)\n\nProspectus: https://studiegi
+ ds.universiteitleiden.nl/en/search?for=courses&q=4032GENAI&redirect=1\n\
+ nID: 262424\n\nThis appointment is managed by MyTimetable.\n\nLast synch
+ ronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251104T121500Z
+DTEND:20251104T140000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!223573-10@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 223573\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251105T100000Z
+DTEND:20251105T114500Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216122-10@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6X
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Meer\
+ , M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group)
+ : 19444 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216122\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251105T121500Z
+DTEND:20251105T140000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-10@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251105T141500Z
+DTEND:20251105T160000Z
+SUMMARY:4032GENAIY - Generative AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.18\, Gorlaeus Building - BW.0.19
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262466-10@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.18\nGorlaeus Building - BW.0
+ .19\n\nStaff member(s): Saunders\, R.(Rob)\n\nClass number (Group): 1499
+ 3 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en/searc
+ h?for=courses&q=4032GENAI&redirect=1\n\nID: 262466\n\nThis appointment i
+ s managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CE
+ T
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251106T080000Z
+DTEND:20251106T094500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.31
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!241943-10@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.31\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 241943\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251107T080000Z
+DTEND:20251107T094500Z
+SUMMARY:4032COVIXY - Computer Vision - Werkgroep 102
+LOCATION:Gorlaeus Building - DM.0.13-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207565-10@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ W\n\nLocation(s):\nGorlaeus Building - DM.0.13-PC\n\nStaff member(s): Ca
+ o\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12410 (102)\
+ n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=co
+ urses&q=4032COVIX&redirect=1\n\nID: 207565\n\nThis appointment is manage
+ d by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251107T141500Z
+DTEND:20251107T160000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Practisch werk 102
+LOCATION:Gorlaeus Building - DM.0.21-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216258-10@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Practicum\n\nProspec
+ tus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6XA\
+ n\nLocation(s):\nGorlaeus Building - DM.0.21-PC\n\nStaff member(s): Meer
+ \, M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group
+ ): 19474 (102)\n\nProspectus: https://studiegids.universiteitleiden.nl/e
+ n/search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216258\n\nThis appoin
+ tment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 1
+ 2:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251110T100000Z
+DTEND:20251110T114500Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Werkgroep 101
+LOCATION:Gorlaeus Building - BE.0.09
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!267385-11@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ W\n\nLocation(s):\nGorlaeus Building - BE.0.09\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 15003 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 267385\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251110T121500Z
+DTEND:20251110T140000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!224791-11@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Müller-Brockhau
+ sen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\nProspectu
+ s: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032
+ IVGM6&redirect=1\n\nID: 224791\n\nThis appointment is managed by MyTimet
+ able.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251110T141500Z
+DTEND:20251110T160000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-11@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251111T080000Z
+DTEND:20251111T094500Z
+SUMMARY:4032GENAIY - Generative AI - Hoorcollege 101
+LOCATION:Lecture Hall - C1
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262424-11@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ H\n\nLocation(s):\nLecture Hall - C1\n\nStaff member(s): Saunders\, R.(R
+ ob)\n\nClass number (Group): 14992 (101)\n\nProspectus: https://studiegi
+ ds.universiteitleiden.nl/en/search?for=courses&q=4032GENAI&redirect=1\n\
+ nID: 262424\n\nThis appointment is managed by MyTimetable.\n\nLast synch
+ ronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251111T121500Z
+DTEND:20251111T140000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!223573-11@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 223573\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251112T100000Z
+DTEND:20251112T114500Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216122-11@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6X
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Meer\
+ , M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group)
+ : 19444 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216122\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251112T121500Z
+DTEND:20251112T140000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-11@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251112T141500Z
+DTEND:20251112T160000Z
+SUMMARY:4032GENAIY - Generative AI - Werkgroep 101
+LOCATION:Van Steenis - E0.02A\, Van Steenis - E0.02B
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!261007-11@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ W\n\nLocation(s):\nVan Steenis - E0.02A\nVan Steenis - E0.02B\n\nStaff m
+ ember(s): Saunders\, R.(Rob)\n\nClass number (Group): 14993 (101)\n\nPro
+ spectus: https://studiegids.universiteitleiden.nl/en/search?for=courses&
+ q=4032GENAI&redirect=1\n\nID: 261007\n\nThis appointment is managed by M
+ yTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251113T080000Z
+DTEND:20251113T094500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BE.0.08
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!241944-11@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - BE.0.08\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 241944\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251113T121500Z
+DTEND:20251113T140000Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Werkgroep 101
+LOCATION:Gorlaeus Building - BE.0.09
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!267384-11@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ W\n\nLocation(s):\nGorlaeus Building - BE.0.09\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 15003 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 267384\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251113T141500Z
+DTEND:20251113T160000Z
+SUMMARY:4032BDI15Y - Bachelordossier - Hoorcollege 101
+LOCATION:Gorlaeus Building - CM.1.26
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!264992-11@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032BDI15Y\n\nProspectus number activity: 4032BDI15
+ H\n\nLocation(s):\nGorlaeus Building - CM.1.26\n\nStaff member(s): Meule
+ n\, A.N.(Anna) van der\, Nieuwenburg\, E.P.L.(Evert) van\n\nClass number
+  (Group): 14720 (101)\n\nProspectus: https://studiegids.universiteitleid
+ en.nl/en/search?for=courses&q=4032BDI15&redirect=1\n\nID: 264992\n\nThis
+  appointment is managed by MyTimetable.\n\nLast synchronised on 2025-11-
+ 08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251114T080000Z
+DTEND:20251114T094500Z
+SUMMARY:4032COVIXY - Computer Vision - Werkgroep 102
+LOCATION:Gorlaeus Building - DM.0.13-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207565-11@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ W\n\nLocation(s):\nGorlaeus Building - DM.0.13-PC\n\nStaff member(s): Ca
+ o\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12410 (102)\
+ n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=co
+ urses&q=4032COVIX&redirect=1\n\nID: 207565\n\nThis appointment is manage
+ d by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251117T100000Z
+DTEND:20251117T114500Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Werkgroep 101
+LOCATION:Gorlaeus Building - BE.0.09
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!267385-12@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ W\n\nLocation(s):\nGorlaeus Building - BE.0.09\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 15003 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 267385\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251117T121500Z
+DTEND:20251117T140000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!224791-12@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Müller-Brockhau
+ sen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\nProspectu
+ s: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032
+ IVGM6&redirect=1\n\nID: 224791\n\nThis appointment is managed by MyTimet
+ able.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251117T141500Z
+DTEND:20251117T160000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-12@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251118T080000Z
+DTEND:20251118T094500Z
+SUMMARY:4032GENAIY - Generative AI - Hoorcollege 101
+LOCATION:Van Steenis - F1.04
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209652-12@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ H\n\nLocation(s):\nVan Steenis - F1.04\n\nStaff member(s): Saunders\, R.
+ (Rob)\n\nClass number (Group): 14992 (101)\n\nProspectus: https://studie
+ gids.universiteitleiden.nl/en/search?for=courses&q=4032GENAI&redirect=1\
+ n\nID: 209652\n\nThis appointment is managed by MyTimetable.\n\nLast syn
+ chronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251118T121500Z
+DTEND:20251118T140000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!223573-12@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 223573\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251119T100000Z
+DTEND:20251119T114500Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216122-12@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6X
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Meer\
+ , M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group)
+ : 19444 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216122\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251119T121500Z
+DTEND:20251119T140000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-12@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251119T141500Z
+DTEND:20251119T160000Z
+SUMMARY:4032GENAIY - Generative AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.30\, Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!261006-12@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.29\nGorlaeus Building - BW.0
+ .30\n\nStaff member(s): Saunders\, R.(Rob)\n\nClass number (Group): 1499
+ 3 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en/searc
+ h?for=courses&q=4032GENAI&redirect=1\n\nID: 261006\n\nThis appointment i
+ s managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CE
+ T
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251120T080000Z
+DTEND:20251120T094500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - EM.1.09
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212949-12@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - EM.1.09\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212949\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251120T121500Z
+DTEND:20251120T140000Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Werkgroep 101
+LOCATION:Gorlaeus Building - BE.0.09
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!267384-12@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ W\n\nLocation(s):\nGorlaeus Building - BE.0.09\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 15003 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 267384\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251121T080000Z
+DTEND:20251121T094500Z
+SUMMARY:4032COVIXY - Computer Vision - Werkgroep 102
+LOCATION:Gorlaeus Building - DM.0.13-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207565-12@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ W\n\nLocation(s):\nGorlaeus Building - DM.0.13-PC\n\nStaff member(s): Ca
+ o\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12410 (102)\
+ n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=co
+ urses&q=4032COVIX&redirect=1\n\nID: 207565\n\nThis appointment is manage
+ d by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251121T141500Z
+DTEND:20251121T160000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Practisch werk 102
+LOCATION:Gorlaeus Building - DM.0.21-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216258-12@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Practicum\n\nProspec
+ tus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6XA\
+ n\nLocation(s):\nGorlaeus Building - DM.0.21-PC\n\nStaff member(s): Meer
+ \, M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group
+ ): 19474 (102)\n\nProspectus: https://studiegids.universiteitleiden.nl/e
+ n/search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216258\n\nThis appoin
+ tment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 1
+ 2:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251124T100000Z
+DTEND:20251124T114500Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Werkgroep 101
+LOCATION:Gorlaeus Building - BE.0.09
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!267385-13@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ W\n\nLocation(s):\nGorlaeus Building - BE.0.09\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 15003 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 267385\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251124T121500Z
+DTEND:20251124T140000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!224791-13@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Müller-Brockhau
+ sen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\nProspectu
+ s: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032
+ IVGM6&redirect=1\n\nID: 224791\n\nThis appointment is managed by MyTimet
+ able.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251124T141500Z
+DTEND:20251124T160000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-13@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251125T080000Z
+DTEND:20251125T094500Z
+SUMMARY:4032GENAIY - Generative AI - Hoorcollege 101
+LOCATION:Lecture Hall - C1
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262424-13@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ H\n\nLocation(s):\nLecture Hall - C1\n\nStaff member(s): Saunders\, R.(R
+ ob)\n\nClass number (Group): 14992 (101)\n\nProspectus: https://studiegi
+ ds.universiteitleiden.nl/en/search?for=courses&q=4032GENAI&redirect=1\n\
+ nID: 262424\n\nThis appointment is managed by MyTimetable.\n\nLast synch
+ ronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251125T121500Z
+DTEND:20251125T140000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!223573-13@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 223573\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251126T100000Z
+DTEND:20251126T114500Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216122-13@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6X
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Meer\
+ , M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group)
+ : 19444 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216122\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251126T121500Z
+DTEND:20251126T140000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-13@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251126T141500Z
+DTEND:20251126T160000Z
+SUMMARY:4032GENAIY - Generative AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.19\, Gorlaeus Building - BW.0.20
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262465-13@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.19\nGorlaeus Building - BW.0
+ .20\n\nStaff member(s): Saunders\, R.(Rob)\n\nClass number (Group): 1499
+ 3 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en/searc
+ h?for=courses&q=4032GENAI&redirect=1\n\nID: 262465\n\nThis appointment i
+ s managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CE
+ T
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251127T080000Z
+DTEND:20251127T094500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.31
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!241943-13@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.31\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 241943\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251127T121500Z
+DTEND:20251127T140000Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Werkgroep 101
+LOCATION:Gorlaeus Building - BE.0.09
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!267384-13@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ W\n\nLocation(s):\nGorlaeus Building - BE.0.09\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 15003 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 267384\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251127T141500Z
+DTEND:20251127T160000Z
+SUMMARY:4032BDI15Y - Bachelordossier - Hoorcollege 101
+LOCATION:Van Steenis - E0.04
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!233333-13@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032BDI15Y\n\nProspectus number activity: 4032BDI15
+ H\n\nLocation(s):\nVan Steenis - E0.04\n\nStaff member(s): Meulen\, A.N.
+ (Anna) van der\, Nieuwenburg\, E.P.L.(Evert) van\n\nClass number (Group)
+ : 14720 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032BDI15&redirect=1\n\nID: 233333\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251128T080000Z
+DTEND:20251128T094500Z
+SUMMARY:4032COVIXY - Computer Vision - Werkgroep 102
+LOCATION:Gorlaeus Building - DM.0.13-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207565-13@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ W\n\nLocation(s):\nGorlaeus Building - DM.0.13-PC\n\nStaff member(s): Ca
+ o\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12410 (102)\
+ n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=co
+ urses&q=4032COVIX&redirect=1\n\nID: 207565\n\nThis appointment is manage
+ d by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251128T141500Z
+DTEND:20251128T160000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Practisch werk 102
+LOCATION:Gorlaeus Building - DM.0.21-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216258-13@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Practicum\n\nProspec
+ tus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6XA\
+ n\nLocation(s):\nGorlaeus Building - DM.0.21-PC\n\nStaff member(s): Meer
+ \, M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group
+ ): 19474 (102)\n\nProspectus: https://studiegids.universiteitleiden.nl/e
+ n/search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216258\n\nThis appoin
+ tment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 1
+ 2:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251201T100000Z
+DTEND:20251201T114500Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Werkgroep 101
+LOCATION:Gorlaeus Building - BE.0.09
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!267385-14@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ W\n\nLocation(s):\nGorlaeus Building - BE.0.09\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 15003 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 267385\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251201T121500Z
+DTEND:20251201T140000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!224791-14@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Müller-Brockhau
+ sen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\nProspectu
+ s: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032
+ IVGM6&redirect=1\n\nID: 224791\n\nThis appointment is managed by MyTimet
+ able.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251201T141500Z
+DTEND:20251201T160000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-14@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251202T080000Z
+DTEND:20251202T094500Z
+SUMMARY:4032GENAIY - Generative AI - Hoorcollege 101
+LOCATION:Lecture Hall - C1
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262424-14@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ H\n\nLocation(s):\nLecture Hall - C1\n\nStaff member(s): Saunders\, R.(R
+ ob)\n\nClass number (Group): 14992 (101)\n\nProspectus: https://studiegi
+ ds.universiteitleiden.nl/en/search?for=courses&q=4032GENAI&redirect=1\n\
+ nID: 262424\n\nThis appointment is managed by MyTimetable.\n\nLast synch
+ ronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251202T121500Z
+DTEND:20251202T140000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!223573-14@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 223573\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251203T100000Z
+DTEND:20251203T114500Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216122-14@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6X
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Meer\
+ , M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group)
+ : 19444 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216122\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251203T121500Z
+DTEND:20251203T140000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-14@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251203T141500Z
+DTEND:20251203T160000Z
+SUMMARY:4032GENAIY - Generative AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.19\, Gorlaeus Building - BW.0.20
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262465-14@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.19\nGorlaeus Building - BW.0
+ .20\n\nStaff member(s): Saunders\, R.(Rob)\n\nClass number (Group): 1499
+ 3 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en/searc
+ h?for=courses&q=4032GENAI&redirect=1\n\nID: 262465\n\nThis appointment i
+ s managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CE
+ T
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251204T080000Z
+DTEND:20251204T094500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BE.0.08
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!241944-14@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - BE.0.08\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 241944\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251204T121500Z
+DTEND:20251204T140000Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Werkgroep 101
+LOCATION:Gorlaeus Building - BE.0.09
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!267384-14@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ W\n\nLocation(s):\nGorlaeus Building - BE.0.09\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 15003 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 267384\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251205T080000Z
+DTEND:20251205T094500Z
+SUMMARY:4032COVIXY - Computer Vision - Werkgroep 102
+LOCATION:Gorlaeus Building - DM.0.13-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207565-14@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ W\n\nLocation(s):\nGorlaeus Building - DM.0.13-PC\n\nStaff member(s): Ca
+ o\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12410 (102)\
+ n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=co
+ urses&q=4032COVIX&redirect=1\n\nID: 207565\n\nThis appointment is manage
+ d by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251205T141500Z
+DTEND:20251205T160000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Practisch werk 102
+LOCATION:Gorlaeus Building - DM.0.21-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216258-14@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Practicum\n\nProspec
+ tus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6XA\
+ n\nLocation(s):\nGorlaeus Building - DM.0.21-PC\n\nStaff member(s): Meer
+ \, M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group
+ ): 19474 (102)\n\nProspectus: https://studiegids.universiteitleiden.nl/e
+ n/search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216258\n\nThis appoin
+ tment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 1
+ 2:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251208T100000Z
+DTEND:20251208T114500Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Werkgroep 101
+LOCATION:Gorlaeus Building - BE.0.09
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!267385-15@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ W\n\nLocation(s):\nGorlaeus Building - BE.0.09\n\nStaff member(s): Verbe
+ ek\, F.J.(Fons)\n\nClass number (Group): 15003 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&r
+ edirect=1\n\nID: 267385\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251208T121500Z
+DTEND:20251208T140000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Hoorcollege 101
+LOCATION:Lecture Hall - C3
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!224791-15@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ H\n\nLocation(s):\nLecture Hall - C3\n\nStaff member(s): Müller-Brockhau
+ sen\, M.F.T.(Matthias)\n\nClass number (Group): 15024 (101)\n\nProspectu
+ s: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032
+ IVGM6&redirect=1\n\nID: 224791\n\nThis appointment is managed by MyTimet
+ able.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251208T141500Z
+DTEND:20251208T160000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Werkgroep 103
+LOCATION:Gorlaeus Building - BW.0.07
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209676-15@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.07\n\nStaff member(s): Mülle
+ r-Brockhausen\, M.F.T.(Matthias)\n\nClass number (Group): 15029 (103)\n\
+ nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=cour
+ ses&q=4032IVGM6&redirect=1\n\nID: 209676\n\nThis appointment is managed 
+ by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251209T080000Z
+DTEND:20251209T094500Z
+SUMMARY:4032GENAIY - Generative AI - Hoorcollege 101
+LOCATION:Van Steenis - F1.04
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209652-15@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ H\n\nLocation(s):\nVan Steenis - F1.04\n\nStaff member(s): Saunders\, R.
+ (Rob)\n\nClass number (Group): 14992 (101)\n\nProspectus: https://studie
+ gids.universiteitleiden.nl/en/search?for=courses&q=4032GENAI&redirect=1\
+ n\nID: 209652\n\nThis appointment is managed by MyTimetable.\n\nLast syn
+ chronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251209T121500Z
+DTEND:20251209T140000Z
+SUMMARY:4032COVIXY - Computer Vision - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!223573-15@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Cao\,
+  L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12406 (101)\n\n
+ Prospectus: https://studiegids.universiteitleiden.nl/en/search?for=cours
+ es&q=4032COVIX&redirect=1\n\nID: 223573\n\nThis appointment is managed b
+ y MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251210T100000Z
+DTEND:20251210T114500Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216122-15@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6X
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.39\n\nStaff member(s): Meer\
+ , M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group)
+ : 19444 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en
+ /search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216122\n\nThis appoint
+ ment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12
+ :08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251210T121500Z
+DTEND:20251210T140000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Hoorcollege 101
+LOCATION:Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212948-15@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ H\n\nLocation(s):\nGorlaeus Building - BW.0.29\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16350 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 212948\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251210T141500Z
+DTEND:20251210T160000Z
+SUMMARY:4032GENAIY - Generative AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.20\, Gorlaeus Building - BW.0.29
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!261008-15@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.20\nGorlaeus Building - BW.0
+ .29\n\nStaff member(s): Saunders\, R.(Rob)\n\nClass number (Group): 1499
+ 3 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en/searc
+ h?for=courses&q=4032GENAI&redirect=1\n\nID: 261008\n\nThis appointment i
+ s managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CE
+ T
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251211T080000Z
+DTEND:20251211T094500Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.31
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!241943-15@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COGNSY\n\nProspectus number activity: 4032COGNS
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.31\n\nStaff member(s): Milet
+ ic\, S.(Steven)\n\nClass number (Group): 16353 (101)\n\nProspectus: http
+ s://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&r
+ edirect=1\n\nID: 241943\n\nThis appointment is managed by MyTimetable.\n
+ \nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251211T141500Z
+DTEND:20251211T160000Z
+SUMMARY:4032BDI15Y - Bachelordossier - Hoorcollege 101
+LOCATION:Lecture Hall - C2
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!233334-15@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Hoorcollege\n\nProsp
+ ectus number course: 4032BDI15Y\n\nProspectus number activity: 4032BDI15
+ H\n\nLocation(s):\nLecture Hall - C2\n\nStaff member(s): Meulen\, A.N.(A
+ nna) van der\, Nieuwenburg\, E.P.L.(Evert) van\n\nClass number (Group): 
+ 14720 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en/s
+ earch?for=courses&q=4032BDI15&redirect=1\n\nID: 233334\n\nThis appointme
+ nt is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:0
+ 8 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251212T080000Z
+DTEND:20251212T094500Z
+SUMMARY:4032COVIXY - Computer Vision - Werkgroep 102
+LOCATION:Gorlaeus Building - DM.0.13-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207565-15@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032COVIXY\n\nProspectus number activity: 4032COVIX
+ W\n\nLocation(s):\nGorlaeus Building - DM.0.13-PC\n\nStaff member(s): Ca
+ o\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass number (Group): 12410 (102)\
+ n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=co
+ urses&q=4032COVIX&redirect=1\n\nID: 207565\n\nThis appointment is manage
+ d by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251212T141500Z
+DTEND:20251212T160000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Practisch werk 102
+LOCATION:Gorlaeus Building - DM.0.21-PC
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216258-15@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Practicum\n\nProspec
+ tus number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6XA\
+ n\nLocation(s):\nGorlaeus Building - DM.0.21-PC\n\nStaff member(s): Meer
+ \, M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group
+ ): 19474 (102)\n\nProspectus: https://studiegids.universiteitleiden.nl/e
+ n/search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216258\n\nThis appoin
+ tment is managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 1
+ 2:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251215T100000Z
+DTEND:20251215T114500Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Werkgroep 101
+LOCATION:Van Steenis - E0.01
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!267395-16@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIV
+ W\n\nLocation(s):\nVan Steenis - E0.01\n\nStaff member(s): Verbeek\, F.J
+ .(Fons)\n\nClass number (Group): 15003 (101)\n\nProspectus: https://stud
+ iegids.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&redirect=
+ 1\n\nID: 267395\n\nThis appointment is managed by MyTimetable.\n\nLast s
+ ynchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251217T141500Z
+DTEND:20251217T160000Z
+SUMMARY:4032GENAIY - Generative AI - Werkgroep 101
+LOCATION:Gorlaeus Building - BW.0.05\, Gorlaeus Building - BW.0.06
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!262428-16@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Werkcollege\n\nProsp
+ ectus number course: 4032GENAIY\n\nProspectus number activity: 4032GENAI
+ W\n\nLocation(s):\nGorlaeus Building - BW.0.05\nGorlaeus Building - BW.0
+ .06\n\nStaff member(s): Saunders\, R.(Rob)\n\nClass number (Group): 1499
+ 3 (101)\n\nProspectus: https://studiegids.universiteitleiden.nl/en/searc
+ h?for=courses&q=4032GENAI&redirect=1\n\nID: 262428\n\nThis appointment i
+ s managed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CE
+ T
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251222T161500Z
+DTEND:20251222T163000Z
+SUMMARY:4032HCIIVY - Human Computer Interaction & Information Visualizati
+ on - Eindresultaat 101
+LOCATION:Divers - Geen zaal
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209660-17@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Overige\n\nProspectu
+ s number course: 4032HCIIVY\n\nProspectus number activity: 4032HCIIVX\n\
+ nLocation(s):\nDivers - Geen zaal\n\nStaff member(s): Verbeek\, F.J.(Fon
+ s)\n\nClass number (Group): 15004 (101)\n\nProspectus: https://studiegid
+ s.universiteitleiden.nl/en/search?for=courses&q=4032HCIIV&redirect=1\n\n
+ ID: 209660\n\nThis appointment is managed by MyTimetable.\n\nLast synchr
+ onised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251224T161500Z
+DTEND:20251224T163000Z
+SUMMARY:4032GENAIY - Generative AI - Eindresultaat 101
+LOCATION:Divers - Geen zaal
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209654-17@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Overige\n\nProspectu
+ s number course: 4032GENAIY\n\nProspectus number activity: 4032GENAIX\n\
+ nLocation(s):\nDivers - Geen zaal\n\nStaff member(s): Saunders\, R.(Rob)
+ \n\nClass number (Group): 14994 (101)\n\nProspectus: https://studiegids.
+ universiteitleiden.nl/en/search?for=courses&q=4032GENAI&redirect=1\n\nID
+ : 209654\n\nThis appointment is managed by MyTimetable.\n\nLast synchron
+ ised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20251224T161500Z
+DTEND:20251224T163000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Eindresultaat 101
+LOCATION:Divers - Geen zaal
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216124-17@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Overige\n\nProspectu
+ s number course: 4032NLP6XY\n\nProspectus number activity: 4032NLP6XX\n\
+ nLocation(s):\nDivers - Geen zaal\n\nStaff member(s): Meer\, M.T.(Michie
+ l) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number (Group): 19447 (101)
+ \n\nProspectus: https://studiegids.universiteitleiden.nl/en/search?for=c
+ ourses&q=4032NLP6X&redirect=1\n\nID: 216124\n\nThis appointment is manag
+ ed by MyTimetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20260105T161500Z
+DTEND:20260105T163000Z
+SUMMARY:4032IVGM6Y - Introduction to Video Game Making - Eindresultaat 10
+ 1
+LOCATION:Divers - Geen zaal
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!209678-19@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Overige\n\nProspectu
+ s number course: 4032IVGM6Y\n\nProspectus number activity: 4032IVGM6X\n\
+ nLocation(s):\nDivers - Geen zaal\n\nStaff member(s): Müller-Brockhausen
+ \, M.F.T.(Matthias)\n\nClass number (Group): 15026 (101)\n\nProspectus: 
+ https://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032IVG
+ M6&redirect=1\n\nID: 209678\n\nThis appointment is managed by MyTimetabl
+ e.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20260106T080000Z
+DTEND:20260106T110000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Tentamen 101
+LOCATION:Universitair Sportcentrum - A
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!216121-19@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Digitaal Tentamen\n\
+ nProspectus number course: 4032NLP6XY\n\nProspectus number activity: 403
+ 2NLP6XT\n\nLocation(s):\nUniversitair Sportcentrum - A\n\nStaff member(s
+ ): Meer\, M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number
+  (Group): 19445 (101)\n\nProspectus: https://studiegids.universiteitleid
+ en.nl/en/search?for=courses&q=4032NLP6X&redirect=1\n\nID: 216121\n\nThis
+  appointment is managed by MyTimetable.\n\nLast synchronised on 2025-11-
+ 08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20260106T080000Z
+DTEND:20260106T113000Z
+SUMMARY:4032NLP6XY - Natural Language Processing - Tentamen 101 (extra ti
+ jd)
+LOCATION:Universitair Sportcentrum - A
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!220509-19@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Digitaal Tentamen\n\
+ nProspectus number course: 4032NLP6XY\n\nProspectus number activity: 403
+ 2NLP6XT\n\nLocation(s):\nUniversitair Sportcentrum - A\n\nStaff member(s
+ ): Meer\, M.T.(Michiel) van der\, Wijnholds\, G.J.(Gijs)\n\nClass number
+  (Group): 19445 (101)\n\nProspectus: https://studiegids.universiteitleid
+ en.nl/en/search?for=courses&q=4032NLP6X&redirect=1\n\nID: 220509\n\nThis
+  appointment is managed by MyTimetable.\n\nLast synchronised on 2025-11-
+ 08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20260109T121500Z
+DTEND:20260109T151500Z
+SUMMARY:4032COVIXY - Computer Vision - Tentamen 101
+LOCATION:Gorlaeus Building - BW.0.40\, Gorlaeus Building - BW.0.39
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207566-19@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Tentamen\n\nProspect
+ us number course: 4032COVIXY\n\nProspectus number activity: 4032COVIXT\n
+ \nLocation(s):\nGorlaeus Building - BW.0.39\nGorlaeus Building - BW.0.40
+ \n\nStaff member(s): Cao\, L.(Lu)\, Doughty\, H.R.(Hazel)\n\nClass numbe
+ r (Group): 12407 (101)\n\nProspectus: https://studiegids.universiteitlei
+ den.nl/en/search?for=courses&q=4032COVIX&redirect=1\n\nID: 207566\n\nThi
+ s appointment is managed by MyTimetable.\n\nLast synchronised on 2025-11
+ -08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20260109T161500Z
+DTEND:20260109T163000Z
+SUMMARY:4032COVIXY - Computer Vision - Eindresultaat 101
+LOCATION:Divers - Geen zaal
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!207568-19@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Overige\n\nProspectu
+ s number course: 4032COVIXY\n\nProspectus number activity: 4032COVIXX\n\
+ nLocation(s):\nDivers - Geen zaal\n\nStaff member(s): Cao\, L.(Lu)\, Dou
+ ghty\, H.R.(Hazel)\n\nClass number (Group): 12411 (101)\n\nProspectus: h
+ ttps://studiegids.universiteitleiden.nl/en/search?for=courses&q=4032COVI
+ X&redirect=1\n\nID: 207568\n\nThis appointment is managed by MyTimetable
+ .\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20260112T120000Z
+DTEND:20260112T150000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Tentamen 101
+LOCATION:Universitair Sportcentrum - A
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212950-20@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Digitaal Tentamen\n\
+ nProspectus number course: 4032COGNSY\n\nProspectus number activity: 403
+ 2COGNST\n\nLocation(s):\nUniversitair Sportcentrum - A\n\nStaff member(s
+ ): Miletic\, S.(Steven)\n\nClass number (Group): 16351 (101)\n\nProspect
+ us: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=403
+ 2COGNS&redirect=1\n\nID: 212950\n\nThis appointment is managed by MyTime
+ table.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20260112T120000Z
+DTEND:20260112T153000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Tentamen 101 (extra 
+ tijd)
+LOCATION:Universitair Sportcentrum - Dans
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!213129-20@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Digitaal Tentamen\n\
+ nProspectus number course: 4032COGNSY\n\nProspectus number activity: 403
+ 2COGNST\n\nLocation(s):\nUniversitair Sportcentrum - Dans\n\nStaff membe
+ r(s): Miletic\, S.(Steven)\n\nClass number (Group): 16351 (101)\n\nProsp
+ ectus: https://studiegids.universiteitleiden.nl/en/search?for=courses&q=
+ 4032COGNS&redirect=1\n\nID: 213129\n\nThis appointment is managed by MyT
+ imetable.\n\nLast synchronised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20251108T110849Z
+DTSTART:20260112T161500Z
+DTEND:20260112T163000Z
+SUMMARY:4032COGNSY - Cognitive Neuroscience for AI - Eindresultaat 101
+LOCATION:Divers - Geen zaal
+STATUS:CONFIRMED
+SEQUENCE:0
+CREATED:20251108T110849Z
+LAST-MODIFIED:20251108T110849Z
+UID:UL2526!212952-20@rooster.universiteitleiden.nl
+DESCRIPTION:Enrolled for this activity: Yes\n\nType: Overige\n\nProspectu
+ s number course: 4032COGNSY\n\nProspectus number activity: 4032COGNSX\n\
+ nLocation(s):\nDivers - Geen zaal\n\nStaff member(s): Miletic\, S.(Steve
+ n)\n\nClass number (Group): 16348 (101)\n\nProspectus: https://studiegid
+ s.universiteitleiden.nl/en/search?for=courses&q=4032COGNS&redirect=1\n\n
+ ID: 212952\n\nThis appointment is managed by MyTimetable.\n\nLast synchr
+ onised on 2025-11-08 at 12:08 CET
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
