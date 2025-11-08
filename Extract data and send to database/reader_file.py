@@ -29,28 +29,6 @@ def get_calendar_service():
     return service
 
 
-def parse_event_summary(event_summary):
-    """
-    Split the event text into 'details' and 'datetime' parts.
-    Example:
-    '4032HCIIVY - Human Computer Interaction & Information Visualization - Werkgroep 101 (2025-12-08T11:00:00+01:00)'
-    → details: '4032HCIIVY - Human Computer Interaction & Information Visualization - Werkgroep 101'
-      datetime: '2025-12-08T11:00:00+01:00'
-    """
-    match = re.match(r"^(.*)\(([^)]+)\)$", event_summary.strip())
-    if match:
-        details = match.group(1).strip()
-        datetime_str = match.group(2).strip()
-    else:
-        details = event_summary.strip()
-        datetime_str = None
-
-    return {
-        "details": details,
-        "datetime": datetime_str
-    }
-
-
 def list_and_store_events():
     """Fetch upcoming events from primary calendar and store them in MongoDB."""
     service = get_calendar_service()
@@ -76,18 +54,14 @@ def list_and_store_events():
 
     print("\n🎓 Upcoming Events:")
     for event in events:
-        summary = event.get('summary', '')
-        if not summary:
-            continue
-
-        parsed = parse_event_summary(summary)
-        data = {
-            "details": parsed["details"],
-            "datetime": parsed["datetime"]
-        }
-
-        print(f"- {data['details']} ({data['datetime']})")
-        insert_event(data)
+        summary = event.get('summary', 'No Title')
+        start = event['start'].get('dateTime', event['start'].get('date'))
+        print(f"- {summary} ({start})")
+        # Store in MongoDB
+        insert_event({
+            "details": summary,
+            "datetime": start
+        })
 
 
 if __name__ == '__main__':
