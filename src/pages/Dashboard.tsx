@@ -8,6 +8,7 @@ import { Progress } from "@/components/ui/progress";
 import { Calendar, Clock, BookOpen, TrendingUp, Plus, LogOut } from "lucide-react";
 import { toast } from "sonner";
 import type { User } from "@supabase/supabase-js";
+import { AgentStatus } from "@/components/AgentStatus";
 
 interface Assignment {
   id: string;
@@ -141,6 +142,9 @@ export default function Dashboard() {
             </CardDescription>
           </CardHeader>
         </Card>
+
+        {/* Agentic AI Status */}
+        <AgentStatus />
 
         <div className="grid md:grid-cols-3 gap-6">
           {/* Overall Readiness */}
