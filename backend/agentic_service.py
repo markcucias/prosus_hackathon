@@ -98,6 +98,7 @@ class AgenticStudyCompanion:
                     for assignment in created_assignments:
                         try:
                             assignment_details = {
+                                'id': assignment['id'],
                                 'title': assignment['title'],
                                 'date': assignment['due_at'],
                                 'type': assignment['type'],
