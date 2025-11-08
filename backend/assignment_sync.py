@@ -355,22 +355,23 @@ def generate_reminder_message(assignment, days_until):
 def check_and_sync_for_user(user_email):
     """
     Main function to check calendar and sync for a user.
+    Also sends email notifications for newly created assignments.
     Args:
         user_email: Email of the user to sync for
     """
     try:
         client = get_supabase_client()
-        
+
         # Get user by email using REST API
         url = f"{client['url']}/rest/v1/profiles"
         url += f"?email=eq.{user_email}&select=id,email"
         response = requests.get(url, headers=client['headers'])
-        
+
         if response.status_code != 200:
             print(f"❌ Error fetching user: {response.status_code} - {response.text}")
             print(f"   💡 Make sure you're logged into the app first!")
             return
-        
+
         result = response.json()
         if not result or len(result) == 0:
             print(f"❌ User not found: {user_email}")
@@ -381,23 +382,50 @@ def check_and_sync_for_user(user_email):
             print(f"      3. Your profile will be created automatically")
             print(f"      4. Assignments will sync on next agent check!")
             return
-        
+
         user = result[0]
         user_id = user['id']
-        
+
         print(f"\n👤 Syncing for user: {user_email}")
         print(f"   User ID: {user_id}")
-        
-        # Sync unprocessed assignments
-        sync_calendar_to_assignments(user_id)
-        
+
+        # Sync unprocessed assignments and get created assignments
+        created_assignments = sync_calendar_to_assignments(user_id)
+
+        # Send email notification for each newly created assignment
+        if created_assignments:
+            print(f"\n📧 Sending email notifications for {len(created_assignments)} new assignments...")
+            from email_service import send_new_assignment_notification
+
+            for assignment in created_assignments:
+                try:
+                    assignment_details = {
+                        'id': assignment['id'],
+                        'title': assignment['title'],
+                        'date': assignment['due_at'],
+                        'type': assignment['type'],
+                        'course': assignment['title']
+                    }
+
+                    # Send email
+                    email_sent = send_new_assignment_notification(user_email, assignment_details)
+
+                    if email_sent:
+                        mark_assignment_notification_sent(assignment['id'])
+                        print(f"✅ Email sent for: {assignment['title']}")
+                    else:
+                        print(f"⚠️  Failed to send email for: {assignment['title']}")
+                except Exception as e:
+                    print(f"❌ Error sending email for {assignment.get('title', 'Unknown')}: {e}")
+                    continue
+
         # Check for reminders
         reminders = send_proactive_reminders(user_id, days_ahead=7)
-        
+
         print(f"\n✅ Sync complete! {len(reminders)} reminders generated")
-        
+
         return reminders
-        
+
     except Exception as e:
         print(f"❌ Error during sync: {e}")
         import traceback
