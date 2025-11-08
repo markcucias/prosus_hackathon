@@ -136,77 +136,72 @@ export function selectExerciseTypes(assignment, sessionIndex, totalSessions, use
   const config = assignment.type === 'quiz' 
     ? ASSIGNMENT_TYPE_CONFIGS.quiz
     : ASSIGNMENT_TYPE_CONFIGS.exam[assignment.examSubtype || 'hybrid'];
-  
+
   const exerciseCount = config.exercisesPerSession;
-  
-  // Adjust difficulty progression based on session
   const sessionProgress = sessionIndex / totalSessions;
-  
-  // Early sessions: more Tier 1 (foundation)
-  // Middle sessions: balanced
-  // Late sessions: more Tier 3 (exam-level)
-  let distribution = { ...config.distribution };
-  
-  if (sessionProgress < 0.3) {
-    // First 30% of sessions - emphasize basics
-    distribution.tier1 += 0.15;
-    distribution.tier3 -= 0.15;
-  } else if (sessionProgress > 0.7) {
-    // Last 30% of sessions - emphasize application
-    distribution.tier1 -= 0.10;
-    distribution.tier3 += 0.10;
-  }
-  
-  // Select templates based on weights
-  const selectedTypes = [];
-  const weights = config.templateWeights;
-  
-  // Create weighted array
-  const weightedTemplates = [];
-  for (const [template, weight] of Object.entries(weights)) {
-    const count = Math.round(weight * 100);
-    for (let i = 0; i < count; i++) {
-      weightedTemplates.push(template);
+
+  // Adjust distribution early/late
+  const dist = { ...config.distribution };
+  if (sessionProgress < 0.3) { dist.tier1 += 0.15; dist.tier3 -= 0.15; }
+  else if (sessionProgress > 0.7) { dist.tier1 -= 0.10; dist.tier3 += 0.10; }
+
+  // Partition templates by tier
+  const tierBuckets = {
+    tier1: Object.keys(config.templateWeights).filter(t => TIER1_TEMPLATES[t]),
+    tier2: Object.keys(config.templateWeights).filter(t => TIER2_TEMPLATES[t]),
+    tier3: Object.keys(config.templateWeights).filter(t => TIER3_TEMPLATES[t]),
+  };
+
+  // How many from each tier
+  const counts = {
+    tier1: Math.max(0, Math.round(dist.tier1 * exerciseCount)),
+    tier2: Math.max(0, Math.round(dist.tier2 * exerciseCount)),
+    tier3: Math.max(0, Math.round(dist.tier3 * exerciseCount)),
+  };
+  // Fix rounding to ensure total = exerciseCount
+  while (counts.tier1 + counts.tier2 + counts.tier3 > exerciseCount) counts.tier1--;
+  while (counts.tier1 + counts.tier2 + counts.tier3 < exerciseCount) counts.tier2++;
+
+  const pickFromTier = (tierName, n) => {
+    const types = tierBuckets[tierName];
+    const picked = [];
+    if (!types.length || n <= 0) return picked;
+    // weighted pick using config.templateWeights
+    const weighted = types.flatMap(t => Array(Math.max(1, Math.round(config.templateWeights[t]*100))).fill(t));
+    for (let i = 0; i < n; i++) {
+      picked.push(weighted[Math.floor(Math.random()*weighted.length)]);
     }
-  }
-  
-  // Select random templates based on weights
-  const usedIndices = new Set();
-  while (selectedTypes.length < exerciseCount) {
-    const randomIndex = Math.floor(Math.random() * weightedTemplates.length);
-    if (!usedIndices.has(randomIndex)) {
-      selectedTypes.push(weightedTemplates[randomIndex]);
-      usedIndices.add(randomIndex);
-    }
-  }
-  
-  return selectedTypes;
+    return picked;
+  };
+
+  return [
+    ...pickFromTier('tier1', counts.tier1),
+    ...pickFromTier('tier2', counts.tier2),
+    ...pickFromTier('tier3', counts.tier3),
+  ];
 }
 
 /**
  * Select topics for exercises based on user progress
  */
 export function selectTopicsForSession(allTopics, userProgress) {
-  if (!userProgress || !userProgress.weakTopics || userProgress.weakTopics.length === 0) {
-    return allTopics; // No progress data, use all topics evenly
-  }
-  
-  // 70% weak topics, 30% strong topics (for review)
-  const topicList = [];
-  const weakCount = Math.ceil(allTopics.length * 0.7);
-  
-  // Add weak topics
-  const weakTopics = userProgress.weakTopics.slice(0, weakCount);
-  topicList.push(...weakTopics);
-  
-  // Fill remaining with strong topics or all topics if not enough weak ones
-  const remainingCount = allTopics.length - topicList.length;
-  if (remainingCount > 0) {
-    const otherTopics = allTopics.filter(t => !topicList.includes(t));
-    topicList.push(...otherTopics.slice(0, remainingCount));
-  }
-  
-  return topicList.length > 0 ? topicList : allTopics;
+  if (!userProgress || !userProgress.topicMastery) return allTopics;
+  // weight = 1 + (1 - correctRate) to bias toward weak topics
+  const weights = allTopics.map(t => {
+    const m = userProgress.topicMastery[t];
+    const rate = (m && m.total) ? (m.correct / m.total) : 0;
+    return 1 + (1 - rate); // 1..2
+  });
+  const pick = (k) => {
+    const sum = weights.reduce((a,b)=>a+b,0);
+    const r = Math.random()*sum;
+    let acc=0; for (let i=0;i<allTopics.length;i++){ acc+=weights[i]; if (acc>=r) return allTopics[i]; }
+    return allTopics[0];
+  };
+  // produce a rotation list equal to topics length
+  const out = [];
+  for (let i=0;i<allTopics.length;i++) out.push(pick());
+  return Array.from(new Set(out)); // unique order
 }
 
 /**
