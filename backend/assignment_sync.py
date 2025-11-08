@@ -107,31 +107,39 @@ def create_study_sessions_for_assignment(client, user_id, assignment_id, assignm
         due_date = datetime.fromisoformat(assignment_data['due_date'].replace('Z', '+00:00'))
         today = datetime.now(due_date.tzinfo) if due_date.tzinfo else datetime.now()
         days_until_due = max(1, (due_date - today).days)
-        
+
+        print(f"📅 Assignment due in {days_until_due} day(s)")
+
         # Determine number of sessions based on assignment type
         assignment_type = assignment_data.get('type', 'exam')
         if assignment_type == 'exam':
-            sessions_needed = min(days_until_due - 1, 5)
+            sessions_needed = min(max(days_until_due - 1, 1), 5)  # At least 1, max 5
         elif assignment_type == 'quiz':
-            sessions_needed = min(days_until_due - 1, 2)
+            sessions_needed = min(max(days_until_due - 1, 1), 2)  # At least 1, max 2
         else:
-            sessions_needed = min(days_until_due - 1, 3)
-        
-        if sessions_needed <= 0:
-            return 0
-        
+            sessions_needed = min(max(days_until_due - 1, 1), 3)  # At least 1, max 3
+
+        print(f"📚 Creating {sessions_needed} study session(s)...")
+
         sessions = []
         session_duration = 60  # Default 60 minutes
-        
+
         # Create study sessions
         for i in range(sessions_needed):
-            day_offset = int((days_until_due - 1) * (i / sessions_needed))
+            # Distribute sessions across available days
+            if sessions_needed == 1 or days_until_due == 1:
+                # If only 1 session or due tomorrow, schedule it today
+                day_offset = 0
+            else:
+                # Spread sessions across days before due date
+                day_offset = int((days_until_due - 1) * (i / (sessions_needed - 1)))
+
             session_date = today + timedelta(days=day_offset)
             session_date = session_date.replace(hour=18, minute=0, second=0, microsecond=0)  # 6 PM default
-            
-            progress = i / sessions_needed
+
+            progress = i / max(sessions_needed - 1, 1)
             focus = 'concepts' if progress < 0.5 else 'practice'
-            
+
             session = {
                 'user_id': user_id,
                 'assignment_id': assignment_id,
@@ -142,21 +150,25 @@ def create_study_sessions_for_assignment(client, user_id, assignment_id, assignm
                 'status': 'scheduled'
             }
             sessions.append(session)
-        
+            print(f"  Session {i+1}: {session_date.strftime('%Y-%m-%d %H:%M')} - {focus}")
+
         # Insert sessions using REST API
         url = f"{client['url']}/rest/v1/study_sessions"
         response = requests.post(url, json=sessions, headers=client['headers'])
-        
+
         if response.status_code in [200, 201]:
             created_sessions = response.json()
             print(f"✅ Created {len(created_sessions)} study sessions for assignment")
             return len(created_sessions)
         else:
-            print(f"⚠️ Failed to create study sessions: {response.status_code} - {response.text}")
+            print(f"❌ Failed to create study sessions: {response.status_code}")
+            print(f"   Response: {response.text}")
             return 0
-            
+
     except Exception as e:
-        print(f"⚠️ Error creating study sessions: {e}")
+        print(f"❌ Error creating study sessions: {e}")
+        import traceback
+        traceback.print_exc()
         return 0
 
 def sync_calendar_to_assignments(user_id, send_notification_callback=None):
