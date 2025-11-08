@@ -3,7 +3,7 @@ from pymongo import MongoClient
 
 def get_database():
     """Connect to local MongoDB (or change URI for Atlas)."""
-    CONNECTION_STRING = "mongodb://localhost:27017"
+    CONNECTION_STRING = "mongodb+srv://prosus-db-user:yLFIMGwT48qUKxDG@prosus-db-user.wfei3mu.mongodb.net/?retryWrites=true&w=majority"
     client = MongoClient(CONNECTION_STRING)
     return client["study_companion"]
 
