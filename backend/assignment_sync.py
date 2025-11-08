@@ -1,8 +1,8 @@
 # assignment_sync.py - Bridge MongoDB calendar events to Supabase assignments
 import os
 import sys
+import requests
 from datetime import datetime, timedelta
-from supabase import create_client, Client
 from database import (
     get_unprocessed_assignments,
     get_upcoming_assignments,
@@ -16,8 +16,18 @@ SUPABASE_URL = os.getenv('VITE_SUPABASE_URL', 'https://dpyvbkrfasiskdrqimhf.supa
 SUPABASE_KEY = os.getenv('VITE_SUPABASE_ANON_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRweXZia3JmYXNpc2tkcnFpbWhmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI2MDEzNzUsImV4cCI6MjA3ODE3NzM3NX0.JGb_M_zbh2Lzrca8O_GY8UtCvMnZocsiUBEbpELsLV8')
 
 def get_supabase_client():
-    """Get Supabase client."""
-    return create_client(SUPABASE_URL, SUPABASE_KEY)
+    """Get Supabase client - using REST API directly to avoid version issues."""
+    # Return a simple dict-based client that uses requests
+    return {
+        'url': SUPABASE_URL,
+        'key': SUPABASE_KEY,
+        'headers': {
+            'apikey': SUPABASE_KEY,
+            'Authorization': f'Bearer {SUPABASE_KEY}',
+            'Content-Type': 'application/json',
+            'Prefer': 'return=representation'
+        }
+    }
 
 def create_assignment_in_supabase(user_id, assignment_data):
     """
@@ -29,7 +39,7 @@ def create_assignment_in_supabase(user_id, assignment_data):
         Created assignment object or None if failed
     """
     try:
-        supabase = get_supabase_client()
+        client = get_supabase_client()
         
         # Prepare assignment data
         assignment = {
@@ -42,18 +52,26 @@ def create_assignment_in_supabase(user_id, assignment_data):
             'status': 'upcoming'
         }
         
-        # Insert into Supabase
-        result = supabase.table('assignments').insert(assignment).execute()
+        # Insert into Supabase using REST API
+        url = f"{client['url']}/rest/v1/assignments"
+        response = requests.post(url, json=assignment, headers=client['headers'])
         
-        if result.data:
-            print(f"✅ Created assignment in Supabase: {assignment_data['title']}")
-            return result.data[0]
+        if response.status_code in [200, 201]:
+            result = response.json()
+            if result and len(result) > 0:
+                print(f"✅ Created assignment in Supabase: {assignment_data['title']}")
+                return result[0]
+            else:
+                print(f"⚠️ Assignment created but no data returned")
+                return {'id': 'unknown', **assignment}
         else:
-            print(f"❌ Failed to create assignment: {result}")
+            print(f"❌ Failed to create assignment: {response.status_code} - {response.text}")
             return None
             
     except Exception as e:
         print(f"❌ Error creating assignment in Supabase: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
 def extract_topics_from_title(title):
@@ -72,6 +90,64 @@ def extract_topics_from_title(title):
     else:
         return [title.split()[0] if title.split() else 'General']
 
+def create_study_sessions_for_assignment(client, user_id, assignment_id, assignment_data):
+    """Create study sessions for an assignment."""
+    try:
+        due_date = datetime.fromisoformat(assignment_data['due_date'].replace('Z', '+00:00'))
+        today = datetime.now(due_date.tzinfo) if due_date.tzinfo else datetime.now()
+        days_until_due = max(1, (due_date - today).days)
+        
+        # Determine number of sessions based on assignment type
+        assignment_type = assignment_data.get('type', 'exam')
+        if assignment_type == 'exam':
+            sessions_needed = min(days_until_due - 1, 5)
+        elif assignment_type == 'quiz':
+            sessions_needed = min(days_until_due - 1, 2)
+        else:
+            sessions_needed = min(days_until_due - 1, 3)
+        
+        if sessions_needed <= 0:
+            return 0
+        
+        sessions = []
+        session_duration = 60  # Default 60 minutes
+        
+        # Create study sessions
+        for i in range(sessions_needed):
+            day_offset = int((days_until_due - 1) * (i / sessions_needed))
+            session_date = today + timedelta(days=day_offset)
+            session_date = session_date.replace(hour=18, minute=0, second=0, microsecond=0)  # 6 PM default
+            
+            progress = i / sessions_needed
+            focus = 'concepts' if progress < 0.5 else 'practice'
+            
+            session = {
+                'user_id': user_id,
+                'assignment_id': assignment_id,
+                'scheduled_at': session_date.isoformat(),
+                'duration_min': session_duration,
+                'topics': assignment_data.get('topics', []),
+                'focus': focus,
+                'status': 'scheduled'
+            }
+            sessions.append(session)
+        
+        # Insert sessions using REST API
+        url = f"{client['url']}/rest/v1/study_sessions"
+        response = requests.post(url, json=sessions, headers=client['headers'])
+        
+        if response.status_code in [200, 201]:
+            created_sessions = response.json()
+            print(f"✅ Created {len(created_sessions)} study sessions for assignment")
+            return len(created_sessions)
+        else:
+            print(f"⚠️ Failed to create study sessions: {response.status_code} - {response.text}")
+            return 0
+            
+    except Exception as e:
+        print(f"⚠️ Error creating study sessions: {e}")
+        return 0
+
 def sync_calendar_to_assignments(user_id):
     """
     Sync unprocessed calendar assignments to Supabase.
@@ -83,6 +159,7 @@ def sync_calendar_to_assignments(user_id):
     """
     unprocessed = get_unprocessed_assignments()
     synced_count = 0
+    client = get_supabase_client()
     
     print(f"\n🔄 Syncing {len(unprocessed)} unprocessed assignments...")
     
@@ -96,6 +173,11 @@ def sync_calendar_to_assignments(user_id):
         created = create_assignment_in_supabase(user_id, assignment_info)
         
         if created:
+            assignment_id = created.get('id')
+            if assignment_id:
+                # Create study sessions for this assignment
+                create_study_sessions_for_assignment(client, user_id, assignment_id, assignment_info)
+            
             # Mark as processed in MongoDB
             mark_assignment_processed(calendar_event['_id'])
             synced_count += 1
@@ -173,16 +255,30 @@ def check_and_sync_for_user(user_email):
         user_email: Email of the user to sync for
     """
     try:
-        supabase = get_supabase_client()
+        client = get_supabase_client()
         
-        # Get user by email
-        result = supabase.table('profiles').select('*').eq('email', user_email).execute()
+        # Get user by email using REST API
+        url = f"{client['url']}/rest/v1/profiles"
+        url += f"?email=eq.{user_email}&select=id,email"
+        response = requests.get(url, headers=client['headers'])
         
-        if not result.data:
-            print(f"❌ User not found: {user_email}")
+        if response.status_code != 200:
+            print(f"❌ Error fetching user: {response.status_code} - {response.text}")
+            print(f"   💡 Make sure you're logged into the app first!")
             return
         
-        user = result.data[0]
+        result = response.json()
+        if not result or len(result) == 0:
+            print(f"❌ User not found: {user_email}")
+            print(f"   📝 This email doesn't have a profile in Supabase yet.")
+            print(f"   👉 To fix this:")
+            print(f"      1. Go to: http://localhost:8080/auth")
+            print(f"      2. Sign up or log in with: {user_email}")
+            print(f"      3. Your profile will be created automatically")
+            print(f"      4. Assignments will sync on next agent check!")
+            return
+        
+        user = result[0]
         user_id = user['id']
         
         print(f"\n👤 Syncing for user: {user_email}")

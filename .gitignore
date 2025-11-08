@@ -22,8 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Sensitive files
+token.json
 backend/token.json
-backend/credentials.json
-.env
-Extract data and send to database/token.json
-Extract data and send to database/credentials.json
+*.token.json
