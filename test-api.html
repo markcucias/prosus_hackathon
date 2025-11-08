@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Hackathon API</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        pre { background: #f4f4f4; padding: 15px; overflow-x: auto; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Test Hackathon OpenAI API</h1>
+    <button onclick="testAPI()">Test API Call</button>
+    <div id="output"></div>
+
+    <script>
+        async function testAPI() {
+            const output = document.getElementById('output');
+            output.innerHTML = '<p>Testing API...</p>';
+            
+            try {
+                const response = await fetch('https://fj7qg3jbr3.execute-api.eu-west-1.amazonaws.com/v1/chat/completions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer sk-DOE4EeyEblTk-7PgL3cd0w'
+                    },
+                    body: JSON.stringify({
+                        model: 'gpt-5-nano',
+                        messages: [
+                            {
+                                role: 'user',
+                                content: 'Generate a simple multiple choice question about React. Respond in JSON format with fields: question, options (array of 4 strings), correctAnswer (A/B/C/D), explanation.'
+                            }
+                        ],
+                        temperature: 0.7
+                        // Note: NOT using response_format
+                    })
+                });
+
+                const data = await response.json();
+                
+                output.innerHTML = `
+                    <h2 class="success">✅ API Response:</h2>
+                    <pre>${JSON.stringify(data, null, 2)}</pre>
+                `;
+            } catch (error) {
+                output.innerHTML = `
+                    <h2 class="error">❌ Error:</h2>
+                    <pre>${error.message}</pre>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
+

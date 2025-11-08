@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Educational app theme - calm, focused */
+    --background: 220 20% 98%;
+    --foreground: 220 15% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 12%;
+
+    /* Primary: Trustworthy blue for learning */
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 214 84% 48%;
+
+    /* Secondary: Soft green for success/progress */
+    --secondary: 160 48% 95%;
+    --secondary-foreground: 160 84% 25%;
+
+    /* Muted: Subtle backgrounds */
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 10% 46%;
+
+    /* Accent: Energizing teal for CTAs */
+    --accent: 180 72% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Success: Green for correct answers */
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning: Amber for attention */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 214 84% 56%;
+
+    --radius: 0.75rem;
+
+    /* Gradients for visual interest */
+    --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%), hsl(214 84% 48%));
+    --gradient-success: linear-gradient(135deg, hsl(160 84% 39%), hsl(160 84% 32%));
+    
+    /* Shadows for depth */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 220 10% 95%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 220 10% 95%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 220 10% 95%;
+
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 214 84% 48%;
+
+    --secondary: 160 48% 15%;
+    --secondary-foreground: 160 84% 75%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 180 72% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 160 84% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 214 84% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
