@@ -92,6 +92,120 @@ def get_calendar_service_with_write_access():
     service = build('calendar', 'v3', credentials=creds)
     return service
 
+def get_existing_events_for_day(service, date):
+    """
+    Get all events for a specific day.
+
+    Args:
+        service: Google Calendar service object
+        date: datetime object for the day to check
+
+    Returns:
+        list: List of events with start and end times
+    """
+    try:
+        # Set time range for the entire day
+        day_start = date.replace(hour=0, minute=0, second=0, microsecond=0)
+        day_end = date.replace(hour=23, minute=59, second=59, microsecond=999999)
+
+        events_result = service.events().list(
+            calendarId='primary',
+            timeMin=day_start.isoformat(),
+            timeMax=day_end.isoformat(),
+            singleEvents=True,
+            orderBy='startTime'
+        ).execute()
+
+        events = events_result.get('items', [])
+
+        # Parse events into simple format
+        parsed_events = []
+        for event in events:
+            start = event['start'].get('dateTime', event['start'].get('date'))
+            end = event['end'].get('dateTime', event['end'].get('date'))
+
+            # Skip all-day events
+            if 'T' not in start:
+                continue
+
+            start_dt = datetime.datetime.fromisoformat(start.replace('Z', '+00:00'))
+            end_dt = datetime.datetime.fromisoformat(end.replace('Z', '+00:00'))
+
+            parsed_events.append({
+                'start': start_dt,
+                'end': end_dt,
+                'summary': event.get('summary', 'Busy')
+            })
+
+        return parsed_events
+
+    except Exception as e:
+        print(f"⚠️ Error fetching calendar events: {e}")
+        return []
+
+def find_best_available_time(service, preferred_date, preferred_hour, duration_min=60, min_hour=7, max_hour=23):
+    """
+    Find the best available time slot that's closest to the preferred hour.
+
+    Args:
+        service: Google Calendar service object
+        preferred_date: datetime object for the preferred date
+        preferred_hour: int (0-23) for preferred hour
+        duration_min: int - duration of the session in minutes
+        min_hour: int - earliest hour to schedule (default 7 AM)
+        max_hour: int - latest hour to schedule (default 11 PM)
+
+    Returns:
+        datetime: Best available start time, or None if no slot found
+    """
+    try:
+        # Get existing events for this day
+        existing_events = get_existing_events_for_day(service, preferred_date)
+
+        # Ensure preferred_hour is within valid range
+        if preferred_hour < min_hour:
+            preferred_hour = min_hour
+        elif preferred_hour > max_hour - (duration_min / 60):
+            preferred_hour = int(max_hour - (duration_min / 60))
+
+        # Try the preferred hour first
+        candidate_times = [preferred_hour]
+
+        # Then try times nearby (±1, ±2, ±3 hours, etc.)
+        for offset in range(1, max_hour - min_hour):
+            if preferred_hour + offset <= max_hour - (duration_min / 60):
+                candidate_times.append(preferred_hour + offset)
+            if preferred_hour - offset >= min_hour:
+                candidate_times.append(preferred_hour - offset)
+
+        # Check each candidate time for conflicts
+        for hour in candidate_times:
+            candidate_start = preferred_date.replace(hour=hour, minute=0, second=0, microsecond=0)
+            candidate_end = candidate_start + datetime.timedelta(minutes=duration_min)
+
+            # Check if this slot conflicts with any existing event
+            has_conflict = False
+            for event in existing_events:
+                # Check if times overlap
+                if (candidate_start < event['end'] and candidate_end > event['start']):
+                    has_conflict = True
+                    print(f"   ⚠️ Conflict at {hour}:00 with: {event['summary']}")
+                    break
+
+            if not has_conflict:
+                if hour != preferred_hour:
+                    print(f"   ✅ Found available slot at {hour}:00 (preferred was {preferred_hour}:00)")
+                return candidate_start
+
+        # If no slot found, return preferred time anyway (user can manually adjust)
+        print(f"   ⚠️ No conflict-free slot found, using preferred time {preferred_hour}:00")
+        return preferred_date.replace(hour=preferred_hour, minute=0, second=0, microsecond=0)
+
+    except Exception as e:
+        print(f"⚠️ Error finding available time: {e}")
+        # Fallback to preferred time
+        return preferred_date.replace(hour=preferred_hour, minute=0, second=0, microsecond=0)
+
 def create_calendar_event_for_session(session, assignment_title, frontend_url="http://localhost:8080"):
     """
     Create a Google Calendar event for a study session.

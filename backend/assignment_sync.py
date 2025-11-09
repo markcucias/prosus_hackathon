@@ -161,6 +161,16 @@ def create_study_sessions_for_assignment(client, user_id, assignment_id, assignm
         # Get user's preferred study hour
         preferred_hour = get_user_preferred_hour(user_id)
 
+        # Try to get calendar service for conflict detection
+        calendar_service = None
+        try:
+            from google_calendar import get_calendar_service_with_write_access, find_best_available_time
+            calendar_service = get_calendar_service_with_write_access()
+            print(f"📅 Calendar conflict detection enabled")
+        except Exception as cal_error:
+            print(f"⚠️ Calendar conflict detection unavailable: {cal_error}")
+            print(f"   Sessions will be scheduled at preferred time without conflict checking")
+
         # Create study sessions
         for i in range(sessions_needed):
             # Distribute sessions across available days
@@ -171,8 +181,24 @@ def create_study_sessions_for_assignment(client, user_id, assignment_id, assignm
                 # Spread sessions across days before due date
                 day_offset = int((days_until_due - 1) * (i / (sessions_needed - 1)))
 
-            session_date = today + timedelta(days=day_offset)
-            session_date = session_date.replace(hour=preferred_hour, minute=0, second=0, microsecond=0)
+            base_date = today + timedelta(days=day_offset)
+
+            # Find conflict-free time if calendar service is available
+            if calendar_service:
+                print(f"\n  Session {i+1}: Checking for conflicts on {base_date.strftime('%Y-%m-%d')}...")
+                session_date = find_best_available_time(
+                    calendar_service,
+                    base_date,
+                    preferred_hour,
+                    duration_min=session_duration,
+                    min_hour=7,   # No earlier than 7 AM
+                    max_hour=23   # No later than 11 PM
+                )
+            else:
+                # Fallback to preferred hour without conflict checking
+                # But still enforce 7 AM - 11 PM constraint
+                constrained_hour = max(7, min(preferred_hour, 22))  # 22 allows for 60-min session ending at 11 PM
+                session_date = base_date.replace(hour=constrained_hour, minute=0, second=0, microsecond=0)
 
             progress = i / max(sessions_needed - 1, 1)
             focus = 'concepts' if progress < 0.5 else 'practice'
