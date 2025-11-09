@@ -168,7 +168,8 @@ def create_study_sessions_for_assignment(client, user_id, assignment_id, assignm
             calendar_service = get_calendar_service_with_write_access()
             print(f"📅 Calendar conflict detection enabled")
         except Exception as cal_error:
-            print(f"⚠️ Calendar conflict detection unavailable: {cal_error}")
+            print(f"⚠️ Calendar conflict detection unavailable: {str(cal_error)[:200]}")
+            print(f"   To enable conflict detection, run: python backend/google_calendar.py")
             print(f"   Sessions will be scheduled at preferred time without conflict checking")
 
         # Create study sessions
