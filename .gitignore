@@ -36,3 +36,8 @@ __pycache__/
 .Python
 backend/__pycache__/
 backend/*.pyc
+# Secrets
+backend/token.json
+backend/credentials.json
+.env
+frontend/.env
