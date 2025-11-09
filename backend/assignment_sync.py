@@ -101,6 +101,40 @@ def extract_topics_from_title(title):
     else:
         return [title.split()[0] if title.split() else 'General']
 
+def get_user_preferred_hour(user_id):
+    """Get user's preferred study hour based on their preferences."""
+    try:
+        client = get_supabase_client()
+        url = f"{client['url']}/rest/v1/profiles"
+        url += f"?id=eq.{user_id}&select=preferred_times"
+        response = requests.get(url, headers=client['headers'])
+
+        if response.status_code == 200 and response.json():
+            profile = response.json()
+            if profile and len(profile) > 0:
+                preferred_times = profile[0].get('preferred_times', ['evening'])
+
+                # Map preference to hour
+                time_map = {
+                    'morning': 9,    # 9 AM
+                    'afternoon': 14, # 2 PM
+                    'evening': 18    # 6 PM
+                }
+
+                # Use first preference or default to evening
+                preferred_time = preferred_times[0] if preferred_times else 'evening'
+                preferred_hour = time_map.get(preferred_time, 18)
+
+                print(f"📅 User prefers {preferred_time} study sessions (hour: {preferred_hour})")
+                return preferred_hour
+
+        print(f"📅 No preference found, defaulting to 6 PM")
+        return 18  # Default to 6 PM
+
+    except Exception as e:
+        print(f"⚠️ Error getting user preferences: {e}, defaulting to 6 PM")
+        return 18  # Default to 6 PM on error
+
 def create_study_sessions_for_assignment(client, user_id, assignment_id, assignment_data):
     """Create study sessions for an assignment."""
     try:
@@ -124,6 +158,19 @@ def create_study_sessions_for_assignment(client, user_id, assignment_id, assignm
         sessions = []
         session_duration = 60  # Default 60 minutes
 
+        # Get user's preferred study hour
+        preferred_hour = get_user_preferred_hour(user_id)
+
+        # Try to get calendar service for conflict detection
+        calendar_service = None
+        try:
+            from google_calendar import get_calendar_service_with_write_access, find_best_available_time
+            calendar_service = get_calendar_service_with_write_access()
+            print(f"📅 Calendar conflict detection enabled")
+        except Exception as cal_error:
+            print(f"⚠️ Calendar conflict detection unavailable: {cal_error}")
+            print(f"   Sessions will be scheduled at preferred time without conflict checking")
+
         # Create study sessions
         for i in range(sessions_needed):
             # Distribute sessions across available days
@@ -134,8 +181,24 @@ def create_study_sessions_for_assignment(client, user_id, assignment_id, assignm
                 # Spread sessions across days before due date
                 day_offset = int((days_until_due - 1) * (i / (sessions_needed - 1)))
 
-            session_date = today + timedelta(days=day_offset)
-            session_date = session_date.replace(hour=18, minute=0, second=0, microsecond=0)  # 6 PM default
+            base_date = today + timedelta(days=day_offset)
+
+            # Find conflict-free time if calendar service is available
+            if calendar_service:
+                print(f"\n  Session {i+1}: Checking for conflicts on {base_date.strftime('%Y-%m-%d')}...")
+                session_date = find_best_available_time(
+                    calendar_service,
+                    base_date,
+                    preferred_hour,
+                    duration_min=session_duration,
+                    min_hour=7,   # No earlier than 7 AM
+                    max_hour=23   # No later than 11 PM
+                )
+            else:
+                # Fallback to preferred hour without conflict checking
+                # But still enforce 7 AM - 11 PM constraint
+                constrained_hour = max(7, min(preferred_hour, 22))  # 22 allows for 60-min session ending at 11 PM
+                session_date = base_date.replace(hour=constrained_hour, minute=0, second=0, microsecond=0)
 
             progress = i / max(sessions_needed - 1, 1)
             focus = 'concepts' if progress < 0.5 else 'practice'
@@ -159,6 +222,21 @@ def create_study_sessions_for_assignment(client, user_id, assignment_id, assignm
         if response.status_code in [200, 201]:
             created_sessions = response.json()
             print(f"✅ Created {len(created_sessions)} study sessions for assignment")
+
+            # Create Google Calendar events for the sessions
+            try:
+                from google_calendar import create_calendar_events_for_sessions
+                assignment_title = assignment_data.get('title', 'Study Session')
+                calendar_events_created = create_calendar_events_for_sessions(
+                    created_sessions,
+                    assignment_title,
+                    frontend_url="http://localhost:8080"
+                )
+                print(f"📅 Created {calendar_events_created} Google Calendar events")
+            except Exception as calendar_error:
+                print(f"⚠️ Failed to create calendar events (sessions still created): {calendar_error}")
+                # Don't fail the whole process if calendar creation fails
+
             return len(created_sessions)
         else:
             print(f"❌ Failed to create study sessions: {response.status_code}")
@@ -272,6 +350,7 @@ def create_sessions_for_assignment(assignment_id, user_id):
 
         # Prepare assignment data for session creation
         assignment_data = {
+            'title': assignment.get('title', 'Study Session'),
             'due_date': assignment['due_at'],
             'type': assignment['type'],
             'topics': assignment.get('topics', [])
