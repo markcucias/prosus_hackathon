@@ -1,6 +1,7 @@
 import { MultipleChoiceExercise } from './MultipleChoiceExercise';
 import { NumericalExercise } from './NumericalExercise';
 import { ShortAnswerExercise } from './ShortAnswerExercise';
+import { TrueFalseExercise } from './TrueFalseExercise';
 import { Card, CardContent } from '@/components/ui/card';
 import { AlertCircle } from 'lucide-react';
 
@@ -56,14 +57,11 @@ export function ExerciseRenderer({ exercise, onSubmit, isSubmitting }: ExerciseR
 
     case 'true_false_justify':
       return (
-        <Card>
-          <CardContent className="pt-6">
-            <div className="flex items-center gap-2 text-amber-600">
-              <AlertCircle className="h-5 w-5" />
-              <p>True/False exercise component coming soon!</p>
-            </div>
-          </CardContent>
-        </Card>
+        <TrueFalseExercise
+          exercise={exercise}
+          onSubmit={handleSubmit}
+          isSubmitting={isSubmitting}
+        />
       );
 
     case 'fill_in_blank':
