@@ -28,7 +28,7 @@ export const ASSIGNMENT_TYPE_CONFIGS = {
   exam: {
     theoretical: {
       sessionsRecommended: 5,
-      exercisesPerSession: 5,
+      exercisesPerSession: 12,  // Increased from 5 to 12 (≈60 min session)
       distribution: {
         tier1: 0.40,  // 40% basic recall
         tier2: 0.40,  // 40% understanding
@@ -52,7 +52,7 @@ export const ASSIGNMENT_TYPE_CONFIGS = {
     },
     practical: {
       sessionsRecommended: 5,
-      exercisesPerSession: 5,
+      exercisesPerSession: 12,  // Increased from 5 to 12 (≈60 min session)
       distribution: {
         tier1: 0.35,
         tier2: 0.35,
@@ -74,7 +74,7 @@ export const ASSIGNMENT_TYPE_CONFIGS = {
     },
     hybrid: {
       sessionsRecommended: 5,
-      exercisesPerSession: 5,
+      exercisesPerSession: 12,  // Increased from 5 to 12 (≈60 min session)
       distribution: {
         tier1: 0.35,
         tier2: 0.35,
@@ -101,7 +101,7 @@ export const ASSIGNMENT_TYPE_CONFIGS = {
   
   quiz: {
     sessionsRecommended: 2,
-    exercisesPerSession: 5,
+    exercisesPerSession: 10,  // Increased from 5 to 10 (quizzes are shorter)
     distribution: {
       tier1: 0.60,  // Heavy on quick recall
       tier2: 0.30,

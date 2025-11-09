@@ -3,6 +3,7 @@ import os
 import sys
 import requests
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 from database import (
     get_unprocessed_assignments,
     get_upcoming_assignments,
@@ -11,9 +12,12 @@ from database import (
     extract_assignment_info
 )
 
+# Default timezone for scheduling (can be made user-configurable later)
+DEFAULT_TIMEZONE = 'Europe/Amsterdam'  # CET/CEST
+
 # Supabase configuration
-SUPABASE_URL = os.getenv('VITE_SUPABASE_URL', 'https://dpyvbkrfasiskdrqimhf.supabase.co')
-SUPABASE_KEY = os.getenv('VITE_SUPABASE_ANON_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRweXZia3JmYXNpc2tkcnFpbWhmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI2MDEzNzUsImV4cCI6MjA3ODE3NzM3NX0.JGb_M_zbh2Lzrca8O_GY8UtCvMnZocsiUBEbpELsLV8')
+SUPABASE_URL = os.getenv('SUPABASE_URL', os.getenv('VITE_SUPABASE_URL', 'https://lcpexhkqaqftaqdtgebp.supabase.co'))
+SUPABASE_KEY = os.getenv('SUPABASE_KEY', os.getenv('VITE_SUPABASE_ANON_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxjcGV4aGtxYXFmdGFxZHRnZWJwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI2MTcwNDIsImV4cCI6MjA3ODE5MzA0Mn0.z6pY_kCftjr1hT6zW7qCVEYHc4D0X8HLAuk_6N2IbcY'))
 
 def get_supabase_client():
     """Get Supabase client - using REST API directly to avoid version issues."""
@@ -101,37 +105,112 @@ def extract_topics_from_title(title):
     else:
         return [title.split()[0] if title.split() else 'General']
 
+def get_user_preferred_hour(user_id):
+    """Get user's preferred study hour based on their preferences."""
+    try:
+        client = get_supabase_client()
+        url = f"{client['url']}/rest/v1/profiles"
+        url += f"?id=eq.{user_id}&select=preferred_times"
+        response = requests.get(url, headers=client['headers'])
+
+        if response.status_code == 200 and response.json():
+            profile = response.json()
+            if profile and len(profile) > 0:
+                preferred_times = profile[0].get('preferred_times', ['evening'])
+
+                # Map preference to hour
+                time_map = {
+                    'morning': 9,    # 9 AM
+                    'afternoon': 14, # 2 PM
+                    'evening': 18    # 6 PM
+                }
+
+                # Use first preference or default to evening
+                preferred_time = preferred_times[0] if preferred_times else 'evening'
+                preferred_hour = time_map.get(preferred_time, 18)
+
+                print(f"📅 User prefers {preferred_time} study sessions (hour: {preferred_hour})")
+                return preferred_hour
+
+        print(f"📅 No preference found, defaulting to 6 PM")
+        return 18  # Default to 6 PM
+
+    except Exception as e:
+        print(f"⚠️ Error getting user preferences: {e}, defaulting to 6 PM")
+        return 18  # Default to 6 PM on error
+
 def create_study_sessions_for_assignment(client, user_id, assignment_id, assignment_data):
-    """Create study sessions for an assignment."""
+    """Create study sessions for an assignment with timezone-aware scheduling."""
     try:
         due_date = datetime.fromisoformat(assignment_data['due_date'].replace('Z', '+00:00'))
-        today = datetime.now(due_date.tzinfo) if due_date.tzinfo else datetime.now()
+        # Always use the configured timezone for session scheduling
+        local_tz = ZoneInfo(DEFAULT_TIMEZONE)
+        today = datetime.now(local_tz)
         days_until_due = max(1, (due_date - today).days)
-        
+
+        print(f"📅 Assignment due in {days_until_due} day(s)")
+
         # Determine number of sessions based on assignment type
         assignment_type = assignment_data.get('type', 'exam')
         if assignment_type == 'exam':
-            sessions_needed = min(days_until_due - 1, 5)
+            sessions_needed = min(max(days_until_due - 1, 1), 5)  # At least 1, max 5
         elif assignment_type == 'quiz':
-            sessions_needed = min(days_until_due - 1, 2)
+            sessions_needed = min(max(days_until_due - 1, 1), 2)  # At least 1, max 2
         else:
-            sessions_needed = min(days_until_due - 1, 3)
-        
-        if sessions_needed <= 0:
-            return 0
-        
+            sessions_needed = min(max(days_until_due - 1, 1), 3)  # At least 1, max 3
+
+        print(f"📚 Creating {sessions_needed} study session(s)...")
+        print(f"⏰ Using timezone: {DEFAULT_TIMEZONE}")
+
         sessions = []
         session_duration = 60  # Default 60 minutes
-        
+
+        # Get user's preferred study hour
+        preferred_hour = get_user_preferred_hour(user_id)
+
+        # Try to get calendar service for conflict detection
+        calendar_service = None
+        try:
+            from google_calendar import get_calendar_service_with_write_access, find_best_available_time
+            calendar_service = get_calendar_service_with_write_access()
+            print(f"📅 Calendar conflict detection enabled")
+        except Exception as cal_error:
+            print(f"⚠️ Calendar conflict detection unavailable: {str(cal_error)[:200]}")
+            print(f"   To enable conflict detection, run: python backend/google_calendar.py")
+            print(f"   Sessions will be scheduled at preferred time without conflict checking")
+
         # Create study sessions
         for i in range(sessions_needed):
-            day_offset = int((days_until_due - 1) * (i / sessions_needed))
-            session_date = today + timedelta(days=day_offset)
-            session_date = session_date.replace(hour=18, minute=0, second=0, microsecond=0)  # 6 PM default
-            
-            progress = i / sessions_needed
+            # Distribute sessions across available days
+            if sessions_needed == 1 or days_until_due == 1:
+                # If only 1 session or due tomorrow, schedule it today
+                day_offset = 0
+            else:
+                # Spread sessions across days before due date
+                day_offset = int((days_until_due - 1) * (i / (sessions_needed - 1)))
+
+            base_date = today + timedelta(days=day_offset)
+
+            # Find conflict-free time if calendar service is available
+            if calendar_service:
+                print(f"\n  Session {i+1}: Checking for conflicts on {base_date.strftime('%Y-%m-%d')}...")
+                session_date = find_best_available_time(
+                    calendar_service,
+                    base_date,
+                    preferred_hour,
+                    duration_min=session_duration,
+                    min_hour=7,   # No earlier than 7 AM
+                    max_hour=23   # No later than 11 PM
+                )
+            else:
+                # Fallback to preferred hour without conflict checking
+                # But still enforce 7 AM - 11 PM constraint
+                constrained_hour = max(7, min(preferred_hour, 22))  # 22 allows for 60-min session ending at 11 PM
+                session_date = base_date.replace(hour=constrained_hour, minute=0, second=0, microsecond=0)
+
+            progress = i / max(sessions_needed - 1, 1)
             focus = 'concepts' if progress < 0.5 else 'practice'
-            
+
             session = {
                 'user_id': user_id,
                 'assignment_id': assignment_id,
@@ -142,21 +221,40 @@ def create_study_sessions_for_assignment(client, user_id, assignment_id, assignm
                 'status': 'scheduled'
             }
             sessions.append(session)
-        
+            print(f"  Session {i+1}: {session_date.strftime('%Y-%m-%d %H:%M %Z')} ({DEFAULT_TIMEZONE}) - {focus}")
+
         # Insert sessions using REST API
         url = f"{client['url']}/rest/v1/study_sessions"
         response = requests.post(url, json=sessions, headers=client['headers'])
-        
+
         if response.status_code in [200, 201]:
             created_sessions = response.json()
             print(f"✅ Created {len(created_sessions)} study sessions for assignment")
+
+            # Create Google Calendar events for the sessions
+            try:
+                from google_calendar import create_calendar_events_for_sessions
+                assignment_title = assignment_data.get('title', 'Study Session')
+                calendar_events_created = create_calendar_events_for_sessions(
+                    created_sessions,
+                    assignment_title,
+                    frontend_url="http://localhost:8080"
+                )
+                print(f"📅 Created {calendar_events_created} Google Calendar events")
+            except Exception as calendar_error:
+                print(f"⚠️ Failed to create calendar events (sessions still created): {calendar_error}")
+                # Don't fail the whole process if calendar creation fails
+
             return len(created_sessions)
         else:
-            print(f"⚠️ Failed to create study sessions: {response.status_code} - {response.text}")
+            print(f"❌ Failed to create study sessions: {response.status_code}")
+            print(f"   Response: {response.text}")
             return 0
-            
+
     except Exception as e:
-        print(f"⚠️ Error creating study sessions: {e}")
+        print(f"❌ Error creating study sessions: {e}")
+        import traceback
+        traceback.print_exc()
         return 0
 
 def sync_calendar_to_assignments(user_id, send_notification_callback=None):
@@ -260,6 +358,7 @@ def create_sessions_for_assignment(assignment_id, user_id):
 
         # Prepare assignment data for session creation
         assignment_data = {
+            'title': assignment.get('title', 'Study Session'),
             'due_date': assignment['due_at'],
             'type': assignment['type'],
             'topics': assignment.get('topics', [])
@@ -355,22 +454,23 @@ def generate_reminder_message(assignment, days_until):
 def check_and_sync_for_user(user_email):
     """
     Main function to check calendar and sync for a user.
+    Also sends email notifications for newly created assignments.
     Args:
         user_email: Email of the user to sync for
     """
     try:
         client = get_supabase_client()
-        
+
         # Get user by email using REST API
         url = f"{client['url']}/rest/v1/profiles"
         url += f"?email=eq.{user_email}&select=id,email"
         response = requests.get(url, headers=client['headers'])
-        
+
         if response.status_code != 200:
             print(f"❌ Error fetching user: {response.status_code} - {response.text}")
             print(f"   💡 Make sure you're logged into the app first!")
             return
-        
+
         result = response.json()
         if not result or len(result) == 0:
             print(f"❌ User not found: {user_email}")
@@ -381,23 +481,50 @@ def check_and_sync_for_user(user_email):
             print(f"      3. Your profile will be created automatically")
             print(f"      4. Assignments will sync on next agent check!")
             return
-        
+
         user = result[0]
         user_id = user['id']
-        
+
         print(f"\n👤 Syncing for user: {user_email}")
         print(f"   User ID: {user_id}")
-        
-        # Sync unprocessed assignments
-        sync_calendar_to_assignments(user_id)
-        
+
+        # Sync unprocessed assignments and get created assignments
+        created_assignments = sync_calendar_to_assignments(user_id)
+
+        # Send email notification for each newly created assignment
+        if created_assignments:
+            print(f"\n📧 Sending email notifications for {len(created_assignments)} new assignments...")
+            from email_service import send_new_assignment_notification
+
+            for assignment in created_assignments:
+                try:
+                    assignment_details = {
+                        'id': assignment['id'],
+                        'title': assignment['title'],
+                        'date': assignment['due_at'],
+                        'type': assignment['type'],
+                        'course': assignment['title']
+                    }
+
+                    # Send email
+                    email_sent = send_new_assignment_notification(user_email, assignment_details)
+
+                    if email_sent:
+                        mark_assignment_notification_sent(assignment['id'])
+                        print(f"✅ Email sent for: {assignment['title']}")
+                    else:
+                        print(f"⚠️  Failed to send email for: {assignment['title']}")
+                except Exception as e:
+                    print(f"❌ Error sending email for {assignment.get('title', 'Unknown')}: {e}")
+                    continue
+
         # Check for reminders
         reminders = send_proactive_reminders(user_id, days_ahead=7)
-        
+
         print(f"\n✅ Sync complete! {len(reminders)} reminders generated")
-        
+
         return reminders
-        
+
     except Exception as e:
         print(f"❌ Error during sync: {e}")
         import traceback

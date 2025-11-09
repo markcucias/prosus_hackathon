@@ -1,0 +1,4 @@
+conda create --name hackathon python=3.10
+conda activate hackathon
+conda install -c conda-forge google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+conda install -c anaconda pymongo

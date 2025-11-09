@@ -9,6 +9,7 @@ import NewAssignment from "./pages/NewAssignment";
 import AssignmentDetail from "./pages/AssignmentDetail";
 import SessionPage from "./pages/SessionPage";
 import CalendarSync from "./pages/CalendarSync";
+import DiagnosticPage from "./pages/DiagnosticPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/diagnostic" element={<DiagnosticPage />} />
           <Route path="/assignments/new" element={<NewAssignment />} />
           <Route path="/assignments/:id" element={<AssignmentDetail />} />
           <Route path="/sessions/:id" element={<SessionPage />} />
