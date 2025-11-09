@@ -3,6 +3,7 @@ import os
 import sys
 import requests
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 from database import (
     get_unprocessed_assignments,
     get_upcoming_assignments,
@@ -10,6 +11,9 @@ from database import (
     mark_reminder_sent,
     extract_assignment_info
 )
+
+# Default timezone for scheduling (can be made user-configurable later)
+DEFAULT_TIMEZONE = 'Europe/Amsterdam'  # CET/CEST
 
 # Supabase configuration
 SUPABASE_URL = os.getenv('SUPABASE_URL', os.getenv('VITE_SUPABASE_URL', 'https://lcpexhkqaqftaqdtgebp.supabase.co'))
@@ -136,10 +140,12 @@ def get_user_preferred_hour(user_id):
         return 18  # Default to 6 PM on error
 
 def create_study_sessions_for_assignment(client, user_id, assignment_id, assignment_data):
-    """Create study sessions for an assignment."""
+    """Create study sessions for an assignment with timezone-aware scheduling."""
     try:
         due_date = datetime.fromisoformat(assignment_data['due_date'].replace('Z', '+00:00'))
-        today = datetime.now(due_date.tzinfo) if due_date.tzinfo else datetime.now()
+        # Always use the configured timezone for session scheduling
+        local_tz = ZoneInfo(DEFAULT_TIMEZONE)
+        today = datetime.now(local_tz)
         days_until_due = max(1, (due_date - today).days)
 
         print(f"📅 Assignment due in {days_until_due} day(s)")
@@ -154,6 +160,7 @@ def create_study_sessions_for_assignment(client, user_id, assignment_id, assignm
             sessions_needed = min(max(days_until_due - 1, 1), 3)  # At least 1, max 3
 
         print(f"📚 Creating {sessions_needed} study session(s)...")
+        print(f"⏰ Using timezone: {DEFAULT_TIMEZONE}")
 
         sessions = []
         session_duration = 60  # Default 60 minutes
@@ -214,7 +221,7 @@ def create_study_sessions_for_assignment(client, user_id, assignment_id, assignm
                 'status': 'scheduled'
             }
             sessions.append(session)
-            print(f"  Session {i+1}: {session_date.strftime('%Y-%m-%d %H:%M')} - {focus}")
+            print(f"  Session {i+1}: {session_date.strftime('%Y-%m-%d %H:%M %Z')} ({DEFAULT_TIMEZONE}) - {focus}")
 
         # Insert sessions using REST API
         url = f"{client['url']}/rest/v1/study_sessions"
